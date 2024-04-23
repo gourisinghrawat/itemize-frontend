@@ -1,0 +1,207 @@
+.background57 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(11.9px);
+  border-radius: var(--br-4xs);
+  background-color: var(--d9d9d91);
+}
+.product-a-wrapper {
+  width: 256px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-9xl-2) 0 0;
+  box-sizing: border-box;
+}
+.close-circle-icon,
+.close-circle-icon1 {
+  height: 30px;
+  width: 30px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.close-circle-icon1 {
+  position: absolute;
+  margin: 0 !important;
+  top: 14.8px;
+  right: 20px;
+  z-index: 2;
+}
+.pdt-details,
+.stock-interface {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.stock-interface {
+  width: 100%;
+  margin: 0 !important;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(400px);
+  justify-content: space-between;
+  padding: var(--padding-mini-8) var(--padding-xl) var(--padding-477xl)
+    var(--padding-44xl);
+  box-sizing: border-box;
+  gap: var(--gap-xl);
+}
+.pdt-details {
+  align-self: stretch;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 4px 14px;
+  min-height: 340px;
+  z-index: 2;
+}
+.background59 {
+  flex: 1;
+  position: relative;
+  font-size: var(--font-size-lg);
+  line-height: 24.5px;
+  font-family: var(--font-roboto);
+  color: var(--d9d9d94);
+  text-align: center;
+}
+.background60 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-8xs);
+  border: 1px solid var(--d9d9d94);
+  box-sizing: border-box;
+  z-index: 1;
+}
+.button44,
+.text55 {
+  flex: 1;
+  position: relative;
+}
+.button44 {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-2xs-8) var(--padding-lg) var(--padding-3xs-7)
+    var(--padding-lgi-7);
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  min-width: 110px;
+  z-index: 2;
+}
+.text55 {
+  font-size: var(--font-size-lg);
+  line-height: 24.5px;
+  font-family: var(--font-roboto);
+  color: var(--d9d9d94);
+  text-align: center;
+}
+.background61 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-8xs);
+  border: 1px solid var(--d9d9d94);
+  box-sizing: border-box;
+  z-index: 1;
+}
+.background58,
+.button45,
+.p-d-t-button,
+.stocksview-edit {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.button45 {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-2xs-8) var(--padding-lg) var(--padding-3xs-7)
+    var(--padding-lgi-7);
+  background-color: transparent;
+  flex: 1;
+  flex-direction: row;
+  box-sizing: border-box;
+  position: relative;
+  min-width: 110px;
+  z-index: 2;
+}
+.background58,
+.p-d-t-button,
+.stocksview-edit {
+  max-width: 100%;
+}
+.p-d-t-button {
+  width: 368px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: var(--gap-9xl);
+}
+.background58,
+.stocksview-edit {
+  flex-direction: column;
+}
+.background58 {
+  margin: 0;
+  align-self: stretch;
+  gap: var(--gap-mini);
+}
+.stocksview-edit {
+  width: 883px;
+  padding: var(--padding-24xl) var(--padding-44xl) var(--padding-54xl);
+  box-sizing: border-box;
+  position: relative;
+  gap: var(--gap-4xl);
+  z-index: 1;
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--d9d9d94);
+  font-family: var(--font-roboto);
+}
+@media screen and (max-width: 900px) {
+  .stock-interface,
+  .stocksview-edit {
+    padding-left: var(--padding-12xl);
+    box-sizing: border-box;
+  }
+  .stocksview-edit {
+    padding-right: var(--padding-12xl);
+  }
+}
+@media screen and (max-width: 675px) {
+  .stock-interface {
+    flex-wrap: wrap;
+  }
+  .stocksview-edit {
+    padding-top: var(--padding-9xl);
+    padding-bottom: var(--padding-28xl);
+    box-sizing: border-box;
+  }
+}

@@ -1,0 +1,130 @@
+.background19,
+.background20 {
+  background-color: var(--color-whitesmoke-100);
+}
+.background19 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.background20 {
+  z-index: 1;
+}
+.background-parent,
+.background20 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.subtitle1,
+.title8 {
+  align-self: stretch;
+  position: relative;
+}
+.title8 {
+  margin: 0;
+  font-size: inherit;
+  line-height: 53px;
+  font-weight: 500;
+  font-family: inherit;
+}
+.subtitle1 {
+  font-size: var(--font-size-xl);
+  line-height: 140.63%;
+}
+.background-icon1 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-8xs);
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.signup-text1 {
+  flex: 1;
+  position: relative;
+  font-size: var(--font-size-lg);
+  font-family: var(--font-roboto);
+  color: var(--main-color-white);
+  text-align: center;
+  white-space: nowrap;
+  z-index: 1;
+}
+.button17 {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-xs) var(--padding-5xl) var(--padding-2xs)
+    var(--padding-6xl);
+  background-color: transparent;
+  width: 147px;
+  flex-direction: row;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  position: relative;
+}
+.button-instance,
+.button17,
+.content10 {
+  display: flex;
+  align-items: flex-start;
+}
+.button-instance {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+}
+.content10 {
+  position: absolute;
+  height: 35.86%;
+  width: 54.65%;
+  top: 26.43%;
+  right: 22.64%;
+  bottom: 37.71%;
+  left: 22.71%;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-29xl);
+  max-width: 100%;
+  z-index: 2;
+}
+.trial {
+  align-self: stretch;
+  height: 700px;
+  position: relative;
+  max-width: 100%;
+  text-align: center;
+  font-size: var(--font-size-45xl);
+  color: var(--d9d9d94);
+  font-family: var(--font-roboto);
+}
+@media screen and (max-width: 750px) {
+  .title8 {
+    font-size: var(--font-size-32xl);
+    line-height: 42px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .title8 {
+    font-size: var(--font-size-19xl);
+    line-height: 31px;
+  }
+  .subtitle1 {
+    font-size: var(--font-size-base);
+    line-height: 22px;
+  }
+}

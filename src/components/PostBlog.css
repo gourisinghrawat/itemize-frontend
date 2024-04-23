@@ -1,0 +1,115 @@
+.background22,
+.rectangle17 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+.rectangle17 {
+  margin: 0 !important;
+  bottom: 0;
+  background-color: var(--color-whitesmoke-100);
+}
+.background22 {
+  bottom: 0.09%;
+  background-color: var(--d9d9d94);
+}
+.title10 {
+  margin: 0;
+  position: absolute;
+  height: 33.76%;
+  width: 42.05%;
+  top: 27.25%;
+  left: 50%;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+  z-index: 1;
+}
+.media-icon {
+  position: absolute;
+  height: calc(100% - 0.1px);
+  width: 50.03%;
+  top: 0.1px;
+  right: 48.36%;
+  bottom: 0;
+  left: 1.61%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: contain;
+  z-index: 2;
+}
+.author {
+  position: absolute;
+  height: 7.07%;
+  width: 6.92%;
+  top: 137.93%;
+  left: 40.85%;
+  font-size: var(--font-size-sm);
+  line-height: 140.63%;
+  display: none;
+}
+.blog-card-feature {
+  width: 1170px;
+  height: 444px;
+  position: relative;
+  max-width: 100%;
+  z-index: 1;
+}
+.blog-card-parent,
+.post-blog {
+  display: flex;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.blog-card-parent {
+  width: 1170px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding: 0;
+  gap: var(--gap-11xl);
+  z-index: 1;
+  font-size: var(--font-size-5xl);
+  color: var(--d9d9d94);
+}
+.post-blog {
+  align-self: stretch;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--padding-76xl-9) var(--padding-xl);
+  position: relative;
+  gap: var(--gap-28xl-5);
+  text-align: left;
+  font-size: var(--font-size-29xl);
+  color: var(--main-color-white);
+  font-family: var(--font-roboto);
+}
+@media screen and (max-width: 1050px) {
+  .post-blog {
+    padding-top: var(--padding-43xl);
+    padding-bottom: var(--padding-43xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 750px) {
+  .title10 {
+    font-size: var(--font-size-19xl);
+  }
+  .post-blog {
+    gap: var(--gap-5xl);
+    padding-top: var(--padding-21xl);
+    padding-bottom: var(--padding-21xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .title10 {
+    font-size: var(--font-size-10xl);
+  }
+}

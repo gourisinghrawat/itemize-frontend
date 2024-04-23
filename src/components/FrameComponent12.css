@@ -1,0 +1,208 @@
+.background62 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(11.9px);
+  border-radius: var(--br-4xs);
+  background-color: var(--d9d9d91);
+}
+.product-a3 {
+  align-self: stretch;
+  position: relative;
+  font-weight: 500;
+  z-index: 1;
+}
+.product-a-parent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+}
+.radio {
+  cursor: pointer;
+  margin: 0;
+  height: 24px;
+  width: 24px;
+  position: relative;
+}
+.radio-selection {
+  flex: 1;
+  position: relative;
+  line-height: 24px;
+  display: inline-block;
+  min-width: 23px;
+}
+.radio-button {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+}
+.radio1 {
+  cursor: pointer;
+  margin: 0;
+  height: 24px;
+  width: 24px;
+  position: relative;
+}
+.radio-selection1 {
+  flex: 1;
+  position: relative;
+  line-height: 24px;
+  display: inline-block;
+  min-width: 37px;
+}
+.either-or,
+.radio-button1 {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.radio-button1 {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: var(--gap-base);
+}
+.either-or {
+  flex-direction: column;
+  gap: var(--gap-smi);
+  z-index: 1;
+  font-size: var(--font-size-base);
+  color: var(--w-background);
+  font-family: var(--font-noto-sans);
+}
+.text57 {
+  flex: 1;
+  position: relative;
+  font-size: var(--font-size-lg);
+  line-height: 24.5px;
+  font-family: var(--font-roboto);
+  color: var(--d9d9d94);
+  text-align: center;
+}
+.background63 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-8xs);
+  border: 1px solid var(--d9d9d94);
+  box-sizing: border-box;
+  z-index: 1;
+}
+.button46,
+.text58 {
+  flex: 1;
+  position: relative;
+}
+.button46 {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-2xs-8) var(--padding-base) var(--padding-3xs-7)
+    var(--padding-mid);
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  min-width: 96px;
+  z-index: 1;
+}
+.text58 {
+  font-size: var(--font-size-lg);
+  line-height: 24.5px;
+  font-family: var(--font-roboto);
+  color: var(--d9d9d94);
+  text-align: center;
+}
+.background64 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-8xs);
+  border: 1px solid var(--d9d9d94);
+  box-sizing: border-box;
+  z-index: 1;
+}
+.button-background,
+.button47 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.button47 {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-2xs-8) var(--padding-base) var(--padding-3xs-7)
+    var(--padding-mid);
+  background-color: transparent;
+  flex: 1;
+  box-sizing: border-box;
+  position: relative;
+  min-width: 96px;
+  z-index: 1;
+}
+.button-background {
+  align-self: stretch;
+  flex-wrap: wrap;
+  gap: var(--gap-lgi);
+}
+.add-stock,
+.add-stock-wrapper {
+  display: flex;
+  align-items: flex-start;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.add-stock {
+  width: 462px;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-16xl) var(--padding-55xl);
+  position: relative;
+  gap: var(--gap-3xl);
+  z-index: 1;
+}
+.add-stock-wrapper {
+  width: 1428px;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--d9d9d94);
+  font-family: var(--font-roboto);
+}
+@media screen and (max-width: 450px) {
+  .product-a3 {
+    font-size: var(--font-size-base);
+  }
+  .add-stock {
+    padding-left: var(--padding-18xl);
+    padding-right: var(--padding-18xl);
+    box-sizing: border-box;
+  }
+}

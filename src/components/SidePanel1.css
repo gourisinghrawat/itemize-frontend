@@ -1,0 +1,223 @@
+.background65,
+.side-pannel3 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 0 var(--br-6xs) var(--br-6xs) 0;
+  background-color: var(--color-whitesmoke-100);
+}
+.background65 {
+  border-radius: var(--br-8xs);
+  background-color: var(--d9d9d95);
+}
+.dropdown-menu1 {
+  flex: 1;
+  position: relative;
+  display: inline-block;
+  min-width: 66px;
+  z-index: 1;
+}
+.button-primary25 {
+  flex: 1;
+  padding: var(--padding-5xs) var(--padding-5xl) var(--padding-5xs-7)
+    var(--padding-6xl);
+  position: relative;
+}
+.button-primary24,
+.button-primary25,
+.light12 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.button-primary24 {
+  flex: 1;
+}
+.light12 {
+  align-self: stretch;
+  cursor: pointer;
+  z-index: 1;
+}
+.background-icon7 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-8xs);
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.signup-text9 {
+  flex: 1;
+  position: relative;
+  z-index: 1;
+}
+.button48,
+.side-bar-buttons3 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.button48 {
+  flex: 1;
+  padding: var(--padding-4xs-1) var(--padding-lg-7) var(--padding-5xs-6)
+    var(--padding-lgi-6);
+  position: relative;
+}
+.side-bar-buttons3 {
+  align-self: stretch;
+  cursor: pointer;
+  z-index: 1;
+  color: var(--main-color-white);
+}
+.background66 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-8xs);
+  background-color: var(--d9d9d95);
+}
+.text59 {
+  flex: 1;
+  position: relative;
+  z-index: 1;
+}
+.button-primary27 {
+  flex: 1;
+  padding: var(--padding-5xs) var(--padding-5xl) var(--padding-5xs-7)
+    var(--padding-6xl);
+  position: relative;
+}
+.button-primary26,
+.button-primary27,
+.light13 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.button-primary26 {
+  flex: 1;
+}
+.light13 {
+  align-self: stretch;
+  cursor: pointer;
+  z-index: 1;
+}
+.background67 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-8xs);
+  background-color: var(--d9d9d95);
+}
+.text60 {
+  flex: 1;
+  position: relative;
+  z-index: 1;
+}
+.button-primary29 {
+  padding: var(--padding-5xs) var(--padding-5xl) var(--padding-5xs-7)
+    var(--padding-6xl);
+  position: relative;
+}
+.button-primary28,
+.button-primary29 {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.background68,
+.light14 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+}
+.light14 {
+  top: 0.3px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  z-index: 1;
+}
+.background68 {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: var(--br-8xs);
+  background-color: var(--d9d9d95);
+}
+.text61 {
+  position: absolute;
+  width: calc(100% - 49px);
+  top: calc(50% - 7.35px);
+  left: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button-primary30,
+.button-primary31,
+.light15 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.button-primary30,
+.button-primary31 {
+  right: 0;
+  bottom: 0;
+  display: none;
+}
+.light15 {
+  cursor: pointer;
+  z-index: 2;
+}
+.title-bar-orders {
+  align-self: stretch;
+  height: 31px;
+  position: relative;
+}
+.side-panel4 {
+  width: 153px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-lg-7) var(--padding-lgi) var(--padding-xl-3);
+  box-sizing: border-box;
+  position: relative;
+  gap: var(--gap-8xs-3);
+  text-align: center;
+  font-size: var(--font-size-xs);
+  color: var(--d9d9d94);
+  font-family: var(--font-roboto);
+}

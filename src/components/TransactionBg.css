@@ -1,0 +1,105 @@
+.company-name {
+  height: 64px;
+  width: 8px;
+  position: relative;
+  border-radius: var(--br-9xs);
+  background-color: var(--color-darkgray);
+}
+.order,
+.transaction-amount {
+  position: relative;
+  letter-spacing: 0.01em;
+  line-height: 160%;
+  display: inline-block;
+  min-width: 60px;
+}
+.transaction-amount {
+  font-size: var(--font-size-13xl);
+  letter-spacing: -0.01em;
+  line-height: 42px;
+  font-weight: 500;
+  color: var(--d9d9d94);
+  min-width: 54px;
+}
+.date-picker,
+.transaction-name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-9xs);
+}
+.transaction-name {
+  flex: 1;
+  flex-direction: row;
+  gap: var(--gap-xs);
+  min-width: 81px;
+}
+.transactions-item {
+  height: 64px;
+  width: 8px;
+  position: relative;
+  border-radius: var(--br-9xs);
+  background-color: var(--color-gainsboro-100);
+}
+.dp-label,
+.order1 {
+  position: relative;
+  letter-spacing: 0.01em;
+  line-height: 160%;
+  display: inline-block;
+  min-width: 34px;
+}
+.dp-label {
+  font-size: var(--font-size-13xl);
+  letter-spacing: -0.01em;
+  line-height: 42px;
+  font-weight: 500;
+  color: var(--d9d9d94);
+  min-width: 37px;
+}
+.transaction-bg1,
+.transactions-list,
+.transactions-separator {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.transactions-separator {
+  flex-direction: column;
+  gap: var(--gap-9xs);
+}
+.transaction-bg1,
+.transactions-list {
+  flex-direction: row;
+}
+.transactions-list {
+  width: 108px;
+  gap: var(--gap-xs);
+}
+.transaction-bg1 {
+  align-self: stretch;
+  gap: var(--gap-16xl);
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: var(--greyscale-grey-500);
+  font-family: var(--font-roboto);
+}
+@media screen and (max-width: 1050px) {
+  .dp-label,
+  .transaction-amount {
+    font-size: var(--font-size-7xl);
+    line-height: 33px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .dp-label,
+  .transaction-amount {
+    font-size: var(--font-size-lgi);
+    line-height: 25px;
+  }
+  .transaction-bg1 {
+    flex-wrap: wrap;
+    gap: var(--gap-mid);
+  }
+}

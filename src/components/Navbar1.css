@@ -1,0 +1,50 @@
+.logo8 {
+  position: relative;
+  text-transform: uppercase;
+  display: inline-block;
+  min-width: 92px;
+  cursor: pointer;
+}
+.notificationsstyle4-icon2 {
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.notificationsstyle4-icon2,
+.person-icon2,
+.reorder-threeoutline-icon2 {
+  height: 30px;
+  width: 30px;
+  position: relative;
+  min-height: 30px;
+}
+.person-icon2 {
+  cursor: pointer;
+}
+.reorder-threeoutline-icon2 {
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.icons2,
+.navbar5 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 0 var(--padding-30xl);
+  gap: var(--gap-lgi);
+}
+.navbar5 {
+  align-self: stretch;
+  background-color: var(--main-color-white);
+  overflow: hidden;
+  justify-content: space-between;
+  padding: var(--padding-xl) var(--padding-11xl);
+  top: 0;
+  z-index: 99;
+  position: sticky;
+  gap: var(--gap-xl);
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--d9d9d94);
+  font-family: var(--font-roboto);
+}

@@ -1,0 +1,223 @@
+.background-icon2,
+.side-pannel {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.side-pannel {
+  border-radius: 0 var(--br-6xs) var(--br-6xs) 0;
+  background-color: var(--color-whitesmoke-100);
+}
+.background-icon2 {
+  border-radius: var(--br-8xs);
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.signup-text4 {
+  flex: 1;
+  position: relative;
+  z-index: 1;
+}
+.button32,
+.side-bar-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.button32 {
+  flex: 1;
+  padding: var(--padding-4xs-1) var(--padding-lg-7) var(--padding-5xs-6)
+    var(--padding-lgi-6);
+  position: relative;
+}
+.side-bar-buttons {
+  align-self: stretch;
+  cursor: pointer;
+  z-index: 1;
+  color: var(--main-color-white);
+}
+.background32 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-8xs);
+  background-color: var(--d9d9d95);
+}
+.amount-label1 {
+  flex: 1;
+  position: relative;
+  z-index: 1;
+}
+.button-primary1 {
+  flex: 1;
+  padding: var(--padding-5xs) var(--padding-5xl) var(--padding-5xs-7)
+    var(--padding-6xl);
+  position: relative;
+}
+.button-primary,
+.button-primary1,
+.light {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.button-primary {
+  flex: 1;
+}
+.light {
+  align-self: stretch;
+  cursor: pointer;
+  z-index: 1;
+}
+.background33 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-8xs);
+  background-color: var(--d9d9d95);
+}
+.text32 {
+  flex: 1;
+  position: relative;
+  z-index: 1;
+}
+.button-primary3 {
+  flex: 1;
+  padding: var(--padding-5xs) var(--padding-5xl) var(--padding-5xs-7)
+    var(--padding-6xl);
+  position: relative;
+}
+.button-primary2,
+.button-primary3,
+.light1 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.button-primary2 {
+  flex: 1;
+}
+.light1 {
+  align-self: stretch;
+  cursor: pointer;
+  z-index: 1;
+}
+.background34 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-8xs);
+  background-color: var(--d9d9d95);
+}
+.text33 {
+  flex: 1;
+  position: relative;
+  z-index: 1;
+}
+.button-primary5 {
+  padding: var(--padding-5xs) var(--padding-5xl) var(--padding-5xs-7)
+    var(--padding-6xl);
+  position: relative;
+}
+.button-primary4,
+.button-primary5 {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.background35,
+.light2 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+}
+.light2 {
+  top: 0.3px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  z-index: 1;
+}
+.background35 {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: var(--br-8xs);
+  background-color: var(--d9d9d95);
+}
+.text34 {
+  position: absolute;
+  width: calc(100% - 49px);
+  top: calc(50% - 7.35px);
+  left: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button-primary6,
+.button-primary7,
+.light3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.button-primary6,
+.button-primary7 {
+  right: 0;
+  bottom: 0;
+  display: none;
+}
+.light3 {
+  cursor: pointer;
+  z-index: 2;
+}
+.data-stream {
+  align-self: stretch;
+  height: 31px;
+  position: relative;
+}
+.side-panel {
+  width: 153px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-lg-7) var(--padding-lgi) var(--padding-xl-3);
+  box-sizing: border-box;
+  position: relative;
+  gap: var(--gap-8xs-3);
+  text-align: center;
+  font-size: var(--font-size-xs);
+  color: var(--d9d9d94);
+  font-family: var(--font-roboto);
+}

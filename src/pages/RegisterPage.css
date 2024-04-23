@@ -1,0 +1,110 @@
+.background {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--main-color-white);
+}
+.logo {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: inherit;
+  display: inline-block;
+  min-width: 92px;
+  z-index: 1;
+}
+.navbar {
+  width: 1512px;
+  margin: 0 !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-xl-3) var(--padding-12xl) var(--padding-3xl-7);
+  box-sizing: border-box;
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--d9d9d94);
+  font-family: var(--font-roboto);
+}
+.media-background-icon {
+  height: 654px;
+  width: 1512px;
+  position: relative;
+  object-fit: cover;
+  display: none;
+  max-width: 100%;
+  z-index: 0;
+}
+.media-background {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  backdrop-filter: blur(4px);
+  background-color: var(--color-whitesmoke-400);
+  z-index: 1;
+}
+.media,
+.register-page,
+.signin-panel {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.media {
+  flex: 1;
+  justify-content: center;
+  padding: var(--padding-29xl) var(--padding-xl) var(--padding-8xl);
+  box-sizing: border-box;
+  position: relative;
+  background-image: url(/public/media-background@2x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  max-width: 100%;
+}
+.register-page,
+.signin-panel {
+  width: 100%;
+  justify-content: flex-start;
+}
+.signin-panel {
+  margin: 0 !important;
+  position: absolute;
+  top: 72px;
+  left: 0;
+  border: 1px solid var(--d9d9d94);
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.register-page {
+  height: 982px;
+  position: relative;
+  background-color: var(--main-color-white);
+  overflow: hidden;
+  flex-wrap: wrap;
+  line-height: normal;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 975px) {
+  .register-page {
+    height: auto;
+    min-height: 982;
+  }
+}

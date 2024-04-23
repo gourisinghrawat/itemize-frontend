@@ -1,0 +1,125 @@
+.background15 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--main-color-white);
+}
+.logo4 {
+  position: relative;
+  text-transform: uppercase;
+  display: inline-block;
+  min-width: 92px;
+  white-space: nowrap;
+  z-index: 1;
+}
+.logo-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-6xs-3) 0 0;
+}
+.text16 {
+  flex: 1;
+  position: relative;
+  font-size: var(--font-size-lg);
+  line-height: 24.5px;
+  font-family: var(--font-roboto);
+  color: var(--d9d9d94);
+  text-align: center;
+}
+.background16 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-8xs);
+  border: 1px solid var(--d9d9d94);
+  box-sizing: border-box;
+  z-index: 1;
+}
+.button14 {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-2xs-8) var(--padding-base) var(--padding-3xs-7)
+    var(--padding-mid);
+  background-color: transparent;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  z-index: 1;
+}
+.background-icon {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-8xs);
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.button15,
+.signup-text {
+  position: relative;
+  z-index: 1;
+}
+.signup-text {
+  flex: 1;
+  font-size: var(--font-size-lg);
+  font-family: var(--font-roboto);
+  color: var(--main-color-white);
+  text-align: center;
+  white-space: nowrap;
+}
+.button15 {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-xs) var(--padding-5xl) var(--padding-2xs)
+    var(--padding-6xl);
+  background-color: transparent;
+  flex: 0.8596;
+  justify-content: flex-start;
+}
+.button-group,
+.button15,
+.navbar4 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.button-group {
+  width: 311px;
+  justify-content: flex-start;
+  gap: var(--gap-mid);
+}
+.navbar4 {
+  align-self: stretch;
+  justify-content: space-between;
+  padding: var(--padding-sm) var(--padding-xl) var(--padding-smi)
+    var(--padding-12xl);
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  gap: var(--gap-xl);
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--d9d9d94);
+  font-family: var(--font-roboto);
+}

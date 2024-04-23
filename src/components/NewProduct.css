@@ -1,0 +1,144 @@
+.title16 {
+  margin: 0;
+  width: 372px;
+  position: relative;
+  font-size: var(--font-size-5xl);
+  line-height: 34px;
+  font-weight: 700;
+  font-family: var(--font-roboto);
+  color: var(--d9d9d94);
+  text-align: left;
+  display: inline-block;
+  max-width: 100%;
+  flex-shrink: 0;
+}
+.product-form-wrapper,
+.product-form3 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.product-form3 {
+  width: 756px;
+  flex-wrap: wrap;
+  gap: 12px 16px;
+  min-height: 364px;
+}
+.product-form-wrapper {
+  padding: 0 0 var(--padding-6xs-3);
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+.content12 {
+  flex: 1;
+  position: relative;
+  font-size: var(--font-size-lg);
+  line-height: 25px;
+  font-family: var(--font-roboto);
+  color: var(--d9d9d94);
+  text-align: center;
+}
+.button-wrapper1,
+.button42 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.button42 {
+  cursor: pointer;
+  border: 1px solid var(--d9d9d94);
+  padding: var(--padding-5xs) var(--padding-41xl);
+  background-color: transparent;
+  align-self: stretch;
+  border-radius: var(--br-8xs);
+  overflow: hidden;
+  flex-direction: row;
+}
+.button42:hover,
+.button43:hover {
+  background-color: var(--color-darkslategray-700);
+  border: 1px solid var(--d9d9d93);
+  box-sizing: border-box;
+}
+.button-wrapper1 {
+  flex: 1;
+  flex-direction: column;
+  padding: var(--padding-xs) 0 0;
+  box-sizing: border-box;
+  min-width: 114px;
+}
+.text54 {
+  height: 49px;
+  flex: 1;
+  position: relative;
+  font-size: var(--font-size-lg);
+  line-height: 134.77%;
+  font-family: var(--font-roboto);
+  color: var(--d9d9d94);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button43,
+.frame-parent12,
+.new-product {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.button43 {
+  cursor: pointer;
+  border: 1px solid var(--d9d9d94);
+  padding: var(--padding-5xs) var(--padding-40xl);
+  background-color: transparent;
+  flex: 0.3143;
+  border-radius: var(--br-8xs);
+  box-sizing: border-box;
+  overflow: hidden;
+  flex-direction: row;
+  min-width: 114px;
+}
+.frame-parent12,
+.new-product {
+  max-width: 100%;
+}
+.frame-parent12 {
+  width: 368px;
+  flex-direction: row;
+  gap: var(--gap-lg);
+}
+.new-product {
+  margin: 0;
+  height: 495px;
+  flex-direction: column;
+  padding: var(--padding-11xl) 0 var(--padding-46xl-5);
+  box-sizing: border-box;
+  gap: var(--gap-11xs-5);
+  z-index: 1;
+}
+@media screen and (max-width: 675px) {
+  .new-product {
+    padding-top: var(--padding-xl);
+    padding-bottom: var(--padding-24xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .title16 {
+    font-size: var(--font-size-lgi);
+    line-height: 27px;
+  }
+  .button-wrapper1,
+  .button43 {
+    flex: 1;
+  }
+  .frame-parent12 {
+    flex-wrap: wrap;
+  }
+  .new-product {
+    height: auto;
+  }
+}

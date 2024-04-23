@@ -1,0 +1,35 @@
+.content-area {
+  flex: 1;
+  flex-direction: column;
+  gap: 34.9px;
+  max-width: 100%;
+}
+.content-area,
+.feature-split-left,
+.landing-page {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.feature-split-left {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 36px var(--padding-4xs);
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.landing-page {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-gainsboro-100);
+  overflow: hidden;
+  flex-direction: column;
+  gap: 26px;
+  line-height: normal;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 750px) {
+  .content-area {
+    gap: var(--gap-mid);
+  }
+}

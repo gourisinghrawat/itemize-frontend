@@ -1,0 +1,112 @@
+.logo3 {
+  position: relative;
+  text-transform: uppercase;
+  display: inline-block;
+  min-width: 92px;
+  cursor: pointer;
+}
+.notificationsstyle4-icon1 {
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.notificationsstyle4-icon1,
+.person-icon1,
+.reorder-threeoutline-icon1 {
+  height: 30px;
+  width: 30px;
+  position: relative;
+  min-height: 30px;
+}
+.person-icon1 {
+  cursor: pointer;
+}
+.reorder-threeoutline-icon1 {
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.icons1,
+.navbar3 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 0 var(--padding-30xl);
+  gap: var(--gap-lgi);
+}
+.navbar3 {
+  align-self: stretch;
+  background-color: var(--main-color-white);
+  overflow: hidden;
+  justify-content: space-between;
+  padding: var(--padding-xl) var(--padding-11xl);
+  top: 0;
+  z-index: 99;
+  position: sticky;
+  gap: var(--gap-xl);
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--d9d9d94);
+  font-family: var(--font-roboto);
+}
+.blurbg-icon9 {
+  width: 100%;
+  height: 910px;
+  position: absolute;
+  margin: 0 !important;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.edit-order-form-container,
+.edit-order-form2 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.edit-order-form2 {
+  justify-content: flex-start;
+  padding: 82px 0;
+  z-index: 1;
+}
+.edit-order-form-container {
+  align-self: stretch;
+  justify-content: center;
+  padding: 0 var(--padding-xl) 0 var(--padding-2xl);
+}
+.create-order-page {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-gainsboro-100);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: var(--padding-12xs-2) var(--padding-12xs) 299.4px 0;
+  box-sizing: border-box;
+  gap: 189.1px;
+  min-width: 212px;
+  max-width: 2000px;
+  line-height: normal;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 750px) {
+  .create-order-page {
+    gap: 95px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .edit-order-form2 {
+    padding-top: var(--padding-34xl);
+    padding-bottom: var(--padding-34xl);
+    box-sizing: border-box;
+  }
+  .create-order-page {
+    gap: var(--gap-28xl);
+  }
+}

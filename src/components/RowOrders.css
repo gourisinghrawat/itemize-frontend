@@ -1,0 +1,216 @@
+.row-orders-child {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--main-color-white);
+  border-top: 0.1px solid var(--color-darkslategray-200);
+  border-bottom: 0.1px solid var(--color-darkslategray-200);
+  box-sizing: border-box;
+}
+.div26 {
+  align-self: stretch;
+  position: relative;
+}
+.wrapper5 {
+  width: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-5xs-5) 0 0;
+  box-sizing: border-box;
+}
+.sales1 {
+  align-self: stretch;
+  position: relative;
+}
+.sales-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-5xs-5) 0 0;
+  box-sizing: border-box;
+  min-width: 91px;
+}
+.lorem-ipsum2 {
+  align-self: stretch;
+  position: relative;
+}
+.lorem-ipsum-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-5xs-5) 0 0;
+  box-sizing: border-box;
+  min-width: 91px;
+}
+.div27 {
+  align-self: stretch;
+  position: relative;
+}
+.wrapper6 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-5xs-5) 0 0;
+  box-sizing: border-box;
+  min-width: 91px;
+}
+.div28 {
+  align-self: stretch;
+  position: relative;
+}
+.wrapper7 {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-5xs-5) 0 0;
+  box-sizing: border-box;
+}
+.order2 {
+  align-self: stretch;
+  position: relative;
+}
+.order-wrapper {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-5xs-5) 0 0;
+  box-sizing: border-box;
+}
+.checkbox2 {
+  margin: 0;
+  height: 24px;
+  width: 24px;
+  position: relative;
+  min-height: 24px;
+}
+.unchecked1 {
+  flex: 1;
+  position: relative;
+  line-height: 24px;
+}
+.checkbox1 {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 var(--padding-7xs);
+  box-sizing: border-box;
+  gap: var(--gap-base);
+  min-width: 91px;
+  font-family: var(--font-noto-sans);
+}
+.delete-fill-gradient {
+  flex: 1;
+  position: relative;
+  line-height: 15px;
+}
+.background69 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-8xs);
+  border: 1px solid var(--d9d9d94);
+  box-sizing: border-box;
+  z-index: 1;
+}
+.button-wrapper2,
+.button49 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.button49 {
+  align-self: stretch;
+  flex-direction: row;
+  padding: var(--padding-8xs-8) var(--padding-2xs) var(--padding-12xs-2)
+    var(--padding-xs-4);
+  position: relative;
+  cursor: pointer;
+}
+.button-wrapper2 {
+  width: 99px;
+  flex-direction: column;
+  padding: var(--padding-8xs) 0 0;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: var(--font-size-2xs);
+  font-family: var(--font-roboto);
+}
+.delete-fill0-wght400-grad0-ops-icon1,
+.edit-fill0-wght400-grad0-opsz2-icon1 {
+  position: absolute;
+  height: 100%;
+  width: 29.2%;
+  top: 0;
+  right: 70.8%;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.edit-fill0-wght400-grad0-opsz2-icon1 {
+  right: 0;
+  left: 70.8%;
+}
+.edit-delete1 {
+  align-self: stretch;
+  height: 14px;
+  position: relative;
+}
+.edit-delete-frame,
+.frame-parent13,
+.row-orders {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.edit-delete-frame {
+  width: 56.5px;
+  flex-direction: column;
+  padding: var(--padding-5xs) 0 0;
+  box-sizing: border-box;
+}
+.frame-parent13,
+.row-orders {
+  flex-direction: row;
+}
+.frame-parent13 {
+  width: 1145.5px;
+  gap: var(--gap-xl);
+  max-width: 100%;
+  z-index: 1;
+}
+.row-orders {
+  width: 1203px;
+  padding: var(--padding-3xl) var(--padding-3xl) var(--padding-xs);
+  box-sizing: border-box;
+  position: relative;
+  text-align: left;
+  font-size: var(--font-size-xs);
+  color: var(--d9d9d94);
+  font-family: var(--font-inter);
+}

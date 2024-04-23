@@ -1,0 +1,99 @@
+.background10 {
+  height: 72px;
+  width: 1512px;
+  position: relative;
+  background-color: var(--main-color-white);
+  display: none;
+  max-width: 100%;
+}
+.logo2 {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: inherit;
+  display: inline-block;
+  min-width: 92px;
+  z-index: 1;
+}
+.navbar2 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-xl-3) var(--padding-12xl) var(--padding-3xl-7);
+  box-sizing: border-box;
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--d9d9d94);
+  font-family: var(--font-roboto);
+}
+.media-background-icon1 {
+  height: 654px;
+  width: 1512px;
+  position: relative;
+  object-fit: cover;
+  display: none;
+  max-width: 100%;
+  z-index: 0;
+}
+.media-background1 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  backdrop-filter: blur(4px);
+  background-color: var(--color-whitesmoke-400);
+  z-index: 1;
+}
+.media4 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: var(--padding-49xl) var(--padding-xl) 67.3px;
+  box-sizing: border-box;
+  position: relative;
+  background-image: url(/public/media-background@2x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  max-width: 100%;
+  z-index: 2;
+  margin-top: -0.2px;
+}
+.login-page,
+.navbar-instance {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.navbar-instance {
+  align-self: stretch;
+  max-width: 100%;
+}
+.login-page {
+  width: 100%;
+  position: relative;
+  background-color: var(--main-color-white);
+  overflow: hidden;
+  padding: var(--padding-12xs-2) 0 0;
+  box-sizing: border-box;
+  line-height: normal;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 750px) {
+  .media4 {
+    padding-bottom: var(--padding-25xl);
+    box-sizing: border-box;
+  }
+}

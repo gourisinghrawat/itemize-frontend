@@ -1,0 +1,21 @@
+.footer-parent,
+.footer-wrapper {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.footer-wrapper {
+  flex-direction: row;
+  padding: 0 0 0 var(--padding-xs);
+  box-sizing: border-box;
+  margin-top: -256px;
+}
+.footer-parent {
+  flex-direction: column;
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: var(--d9d9d94);
+  font-family: var(--font-roboto);
+}

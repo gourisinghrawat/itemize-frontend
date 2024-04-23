@@ -1,0 +1,27 @@
+.dropdown-title6 {
+  align-self: stretch;
+  position: relative;
+  line-height: 18px;
+  font-weight: 600;
+}
+.dropdowns9,
+.input-field-formselect6 {
+  color: var(--w-background);
+  font-family: var(--font-noto-sans);
+}
+.input-field-formselect6 {
+  align-self: stretch;
+  font-size: var(--font-size-base);
+}
+.dropdowns9 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+  min-width: 147px;
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--font-size-xs);
+}
