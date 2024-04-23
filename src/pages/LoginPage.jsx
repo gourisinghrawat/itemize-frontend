@@ -1,6 +1,6 @@
 import SigninForm from "../components/SigninForm";
-import FrameComponent from "../components/FrameComponent";
 import "./LoginPage.css";
+//remove frame component upar or neeche dono
 
 const LoginPage = () => {
   return (
@@ -20,7 +20,7 @@ const LoginPage = () => {
           <SigninForm />
         </section>
       </main>
-      <FrameComponent />
+      
     </div>
   );
 };

@@ -1,5 +1,5 @@
 import "./SidePanel.css";
-
+// copy of sidepanel 1//
 const SidePanel = ({
   onSideBarButtonsClick,
   onLightContainerClick,

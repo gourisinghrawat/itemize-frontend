@@ -1,7 +1,7 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
-import SidePanel from "../components/SidePanel";
+import SidePanel1 from "../components/SidePanel1";
 import Checkbox from "../components/Checkbox";
 import "./OrderPage.css";
 
@@ -23,7 +23,7 @@ const OrderPage = () => {
         onPersonIconClick={onPersonIconClick}
       />
       <section className="side-panel-group">
-        <SidePanel />
+        <SidePanel1 />
         <div className="checkbox-wrapper">
           <Checkbox />
         </div>

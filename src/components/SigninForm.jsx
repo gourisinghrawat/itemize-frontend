@@ -1,7 +1,7 @@
 import { useCallback } from "react";
-import TextInputs from "./TextInputs";
+import Credentials from "./Credentials"; // import credentials
 import { useNavigate } from "react-router-dom";
-import "./SigninForm.css";
+import "./SigninForm.css";// remove text inputs yahan pe or jo code mein likhe h
 
 const SigninForm = () => {
   const navigate = useNavigate();
@@ -18,10 +18,23 @@ const SigninForm = () => {
       </div>
       <div className="logo-parent">
         <h2 className="logo9">Login</h2>
+        
         <div className="input-field-container">
           <div className="text-inputs-parent">
-            <TextInputs icon="pending_I12:1844;11:1091;11:237" />
-            <TextInputs icon="pending_I12:1844;11:1092;11:237" />
+         
+          <div className="credentials-group">
+          <Credentials
+          inputTextLabel="Email"
+          typeHerePlaceholder=" Enter your valid Email"
+          icon="pending_I113:4406;113:4271;3:258;1:38"
+        />
+            
+            <Credentials
+          inputTextLabel="Password"
+          typeHerePlaceholder="Enter your password"
+          icon="pending_I113:4406;113:4274;3:258;1:38"
+        />
+          </div>
           </div>
           <div className="input-field-container-inner">
             <div className="frame-parent5">
