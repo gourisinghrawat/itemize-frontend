@@ -1,7 +1,7 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
-import SidePanel from "../components/SidePanel";
+import SidePanel from "../components/SidePanel1";
 import Checkbox from "../components/Checkbox";
 import "./OrderPage.css";
 

@@ -1,5 +1,6 @@
 import "./SidePanel.css";
-
+//copy of side panel 1
+//delete
 const SidePanel = ({
   onSideBarButtonsClick,
   onLightContainerClick,

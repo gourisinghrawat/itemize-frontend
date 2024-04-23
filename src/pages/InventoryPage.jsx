@@ -1,7 +1,7 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
-import FrameComponent from "../components/FrameComponent";
+import FrameComponent2 from "../components/FrameComponent2";
 import "./InventoryPage.css";
 
 const InventoryPage = () => {
@@ -21,7 +21,7 @@ const InventoryPage = () => {
         onLogoTextClick={onLogoTextClick}
         onPersonIconClick={onPersonIconClick}
       />
-      <FrameComponent />
+      <FrameComponent2 />
     </div>
   );
 };

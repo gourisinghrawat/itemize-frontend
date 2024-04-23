@@ -1,6 +1,6 @@
 import TextInputs1 from "./TextInputs1";
 import "./FrameComponent12.css";
-
+//add stocks to product
 const FrameComponent1 = () => {
   return (
     <div className="add-stock-wrapper">

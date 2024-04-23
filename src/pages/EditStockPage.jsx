@@ -1,7 +1,7 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
-import FrameComponent1 from "../components/FrameComponent1";
+import FrameComponent12 from "../components/FrameComponent12";
 import "./EditStockPage.css";
 
 const EditStockPage = () => {
@@ -22,7 +22,7 @@ const EditStockPage = () => {
         onPersonIconClick={onPersonIconClick}
       />
       <img className="blurbg-icon6" alt="" src="/blurbg.svg" />
-      <FrameComponent1 />
+      <FrameComponent12 />
     </div>
   );
 };

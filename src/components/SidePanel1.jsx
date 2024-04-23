@@ -1,7 +1,7 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import "./SidePanel1.css";
-
+// in order page
 const SidePanel = () => {
   const navigate = useNavigate();
 
