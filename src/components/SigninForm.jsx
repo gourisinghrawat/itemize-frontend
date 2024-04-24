@@ -1,7 +1,7 @@
 import { useCallback } from "react";
-import TextInputs from "./TextInputs";
+import Credentials from "./Credentials"; // import credentials
 import { useNavigate } from "react-router-dom";
-import "./SigninForm.css";
+import "./SigninForm.css";// remove text inputs yahan pe or jo code mein likhe h
 
 const SigninForm = () => {
   const navigate = useNavigate();
@@ -18,10 +18,36 @@ const SigninForm = () => {
       </div>
       <div className="logo-parent">
         <h2 className="logo9">Login</h2>
+        
         <div className="input-field-container">
           <div className="text-inputs-parent">
-            <TextInputs icon="pending_I12:1844;11:1091;11:237" />
-            <TextInputs icon="pending_I12:1844;11:1092;11:237" />
+         
+          <div className="credentials-group">
+          <Credentials
+          inputTextLabel="Email"
+          typeHerePlaceholder=" Enter your valid Email"
+          idval="email_id"
+          input_type="email"
+        />
+            
+            <Credentials
+          inputTextLabel="Password"
+          idval="login_password"
+          input_type="password"
+          typeHerePlaceholder="Enter your password"
+        />
+        <Credentials
+          inputTextLabel="Login"
+          idval="login_confirm"
+          input_type="submit"
+          typeHerePlaceholder="Login"
+        />
+        <div className="button-frame">
+        <button className="button31" onClick={onButtonClick}>
+          <div className="link-link">cancel</div>
+        </button>
+      </div>
+          </div>
           </div>
           <div className="input-field-container-inner">
             <div className="frame-parent5">
@@ -38,11 +64,7 @@ const SigninForm = () => {
       <div className="text-wrapper">
         <div className="text31" />
       </div>
-      <div className="button-frame">
-        <button className="button31" onClick={onButtonClick}>
-          <div className="link-link">Login</div>
-        </button>
-      </div>
+      
     </form>
   );
 };

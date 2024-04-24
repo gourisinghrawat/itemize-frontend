@@ -1,6 +1,7 @@
 import { useCallback } from "react";
 import TextInputs1 from "./TextInputs1";
 import Dropdowns1 from "./Dropdowns1";
+import Credentials from "./Credentials";
 import { useNavigate } from "react-router-dom";
 import "./AddPartner.css";
 
@@ -17,19 +18,19 @@ const AddPartner = () => {
       <div className="title-container">
         <h1 className="title15">New Partner</h1>
         <div className="new-partner">
-          <TextInputs1
-            inputTextLabel="Name"
-            icon="pending_I37:2205;37:2025;12:554"
-          />
+          <Credentials inputTextLabel="Name"
+          idval="partnerName"
+          typeHerePlaceholder="Full name"
+          input_type="text"/>
           <Dropdowns1 />
-          <TextInputs1
-            inputTextLabel="Email"
-            icon="pending_I37:2205;37:2052;12:554"
-          />
-          <TextInputs1
-            inputTextLabel="Contact Number"
-            icon="pending_I37:2205;37:2061;12:554"
-          />
+          <Credentials inputTextLabel="enter your Email"
+          idval="partneremail"
+          typeHerePlaceholder="email"
+          input_type="email"/>
+          <Credentials inputTextLabel="contact"
+          idval="partnerNo"
+          typeHerePlaceholder="phone no."
+          input_type="text"/>
         </div>
       </div>
       <div className="button-parent2">

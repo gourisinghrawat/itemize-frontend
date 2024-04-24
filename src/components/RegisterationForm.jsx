@@ -16,26 +16,26 @@ const RegisterationForm = () => {
     <form className="registeration-form">
       <div className="background25" />
       <div className="logo-frame">
-        <h2 className="logo6">rEGISTER</h2>
+        <h2 className="logo6">REGISTER</h2>
       </div>
       <div className="credentials-group">
         <Credentials
           inputTextLabel="Name"
           typeHerePlaceholder="name"
-          icon="pending_I113:4406;113:4270;3:258;1:38"
+          type="text"
         />
         <Credentials
           inputTextLabel="Email"
           typeHerePlaceholder="Email"
-          icon="pending_I113:4406;113:4271;3:258;1:38"
+          type="email"
         />
         <Credentials
           inputTextLabel="Phone Number"
           typeHerePlaceholder="Phone Number"
-          icon="pending_I113:4406;113:4272;3:258;1:38"
+          input_type="text"
         />
         <div className="dropdowns">
-          <div className="dropdown-title">Company Role</div>
+          <div className="dropdown-title" >Company Role</div>
           <Form.Select className="input-field-formselect">
             <option>Company Role</option>
             <option value="'Warehouse Manager'">'Warehouse Manager'</option>
@@ -49,19 +49,26 @@ const RegisterationForm = () => {
         <Credentials
           inputTextLabel="password"
           typeHerePlaceholder="Enter username"
-          icon="pending_I113:4406;113:4274;3:258;1:38"
+          input_type="password"
         />
         <Credentials
           inputTextLabel="Confirm Password"
           typeHerePlaceholder="Enter username"
-          icon="pending_I113:4406;113:4275;3:258;1:38"
+          input_type="password"
         />
-      </div>
-      <div className="button-container">
+        <Credentials
+          inputTextLabel="register"
+          typeHerePlaceholder="register"
+          input_type="submit"
+          idval="register_conf"
+        />
+        <div className="button-container">
         <button className="button18" onClick={onButtonClick}>
-          <div className="input-field-instance">Register</div>
+          <div className="input-field-instance">Cancel</div>
           <div className="background26" />
         </button>
+      </div>
+      
       </div>
     </form>
   );

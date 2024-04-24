@@ -1,7 +1,7 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
-import FrameComponent1 from "../components/FrameComponent1";
+import FrameComponent11 from "../components/FrameComponent11";
 import "./PartnerPage.css";
 
 const PartnerPage = () => {
@@ -21,7 +21,7 @@ const PartnerPage = () => {
         onLogoTextClick={onLogoTextClick}
         onPersonIconClick={onPersonIconClick}
       />
-      <FrameComponent1 />
+      <FrameComponent11 />
     </div>
   );
 };

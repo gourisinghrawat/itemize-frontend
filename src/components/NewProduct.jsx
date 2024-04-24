@@ -3,7 +3,7 @@ import TextInputs from "./TextInputs";
 import Dropdowns from "./Dropdowns";
 import { useNavigate } from "react-router-dom";
 import "./NewProduct.css";
-
+//cancel button activated
 const NewProduct = () => {
   const navigate = useNavigate();
 
@@ -13,7 +13,7 @@ const NewProduct = () => {
 
   return (
     <form className="new-product">
-      <h1 className="title16">New Product</h1>
+      <h1 className="title16">New  Product</h1>
       <div className="product-form-wrapper">
         <div className="product-form3">
           <TextInputs
@@ -65,7 +65,8 @@ const NewProduct = () => {
             <div className="content12">Add</div>
           </button>
         </div>
-        <button className="button43">
+        <button className="button43" onClick={onButtonClick}>
+
           <div className="text54">Cancel</div>
         </button>
       </div>

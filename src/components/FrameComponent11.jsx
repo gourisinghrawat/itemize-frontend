@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import PartnerTableTitle from "./PartnerTableTitle";
 import "./FrameComponent11.css";
 
-const FrameComponent1 = () => {
+const FrameComponent11 = () => {
   const navigate = useNavigate();
 
   const onButtonContainerClick = useCallback(() => {
@@ -174,4 +174,4 @@ const FrameComponent1 = () => {
   );
 };
 
-export default FrameComponent1;
+export default FrameComponent11;

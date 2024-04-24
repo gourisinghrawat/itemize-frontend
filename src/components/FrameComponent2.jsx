@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import ProductRow from "./ProductRow";
 import "./FrameComponent2.css";
 
+import SidePanel from "../components/SidePanel";
 const FrameComponent = () => {
   const navigate = useNavigate();
 
@@ -46,53 +47,12 @@ const FrameComponent = () => {
     <section className="frame-section">
       <div className="side-panel-parent1">
         <div className="side-panel2">
-          <div className="side-panel3">
-            <div className="side-pannel2" />
-            <div className="light8" onClick={onLightContainerClick}>
-              <div className="button-primary16">
-                <div className="button-primary17">
-                  <div className="background50" />
-                  <div className="dropdown-menu">Dashboard</div>
-                </div>
-              </div>
-            </div>
-            <div className="light9" onClick={onLightContainer1Click}>
-              <div className="button-primary18">
-                <div className="button-primary19">
-                  <div className="background51" />
-                  <div className="text48">Orders</div>
-                </div>
-              </div>
-            </div>
-            <div className="side-bar-buttons2" onClick={onSideBarButtonsClick}>
-              <div className="button40">
-                <img
-                  className="background-icon5"
-                  alt=""
-                  src="/background.svg"
-                />
-                <div className="signup-text7">Inventory</div>
-              </div>
-            </div>
-            <div className="light-group">
-              <div className="light10">
-                <div className="button-primary20">
-                  <div className="button-primary21">
-                    <div className="background52" />
-                    <div className="text49">Partner</div>
-                  </div>
-                </div>
-              </div>
-              <div className="light11" onClick={onLightContainer12Click}>
-                <div className="button-primary22">
-                  <div className="button-primary23">
-                    <div className="background53" />
-                    <div className="text50">Report</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <SidePanel
+          onSideBarButtonsClick={onSideBarButtonsClick}
+          onLightContainerClick={onLightContainerClick}
+          onLightContainer1Click={onLightContainer1Click}
+          onLightContainer12Click={onLightContainer12Click}
+        />
         </div>
         <div className="frame-parent11">
           <div className="back-button-group">

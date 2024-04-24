@@ -1,11 +1,13 @@
 import "./SidePanel.css";
 //copy of side panel 1
 //delete
+// copy of sidepanel 1//
 const SidePanel = ({
   onSideBarButtonsClick,
   onLightContainerClick,
   onLightContainer1Click,
   onLightContainer12Click,
+  currentPage
 }) => {
   return (
     <div className="side-panel">
