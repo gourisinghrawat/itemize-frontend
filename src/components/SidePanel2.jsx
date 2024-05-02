@@ -10,11 +10,11 @@ const SidePanel = () => {
   }, [navigate]);
 
   const onSideBarButtonsClick = useCallback(() => {
-    navigate("/order-page");
+    navigate("/inventory-page");
   }, [navigate]);
 
   const onLightContainer1Click = useCallback(() => {
-    navigate("/inventory-page");
+    navigate("/order-page");
   }, [navigate]);
 
   const onLightContainer12Click = useCallback(() => {
@@ -32,18 +32,19 @@ const SidePanel = () => {
           </div>
         </div>
       </div>
-      <div className="side-bar-buttons3" onClick={onSideBarButtonsClick}>
-        <div className="button48">
-          <img className="background-icon7" alt="" src="/background.svg" />
-          <div className="signup-text9">Order</div>
-        </div>
-      </div>
+      
       <div className="light13" onClick={onLightContainer1Click}>
         <div className="button-primary26">
           <div className="button-primary27">
             <div className="background66" />
-            <div className="text59">Inventory</div>
+            <div className="text59">Order</div>
           </div>
+        </div>
+      </div>
+      <div className="side-bar-buttons3" onClick={onSideBarButtonsClick}>
+        <div className="button48">
+          <img className="background-icon7" alt="" src="/background.svg" />
+          <div className="signup-text9">Inventory</div>
         </div>
       </div>
       <div className="title-bar-orders">

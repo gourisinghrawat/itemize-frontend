@@ -19,7 +19,7 @@ const Dashboard = () => {
   }, [navigate]);
 
   const onSideBarButtonsClick = useCallback(() => {
-    navigate("/order-page");
+    navigate("/dashboard");
   }, [navigate]);
 
   const onLightContainerClick = useCallback(() => {
@@ -55,10 +55,11 @@ const Dashboard = () => {
       <b className="title">Hi, Aditi</b>
       <main className="search-icon">
         <SidePanel
-          onSideBarButtonsClick={onSideBarButtonsClick}
-          onLightContainerClick={onLightContainerClick}
-          onLightContainer1Click={onLightContainer1Click}
-          onLightContainer12Click={onLightContainer12Click}
+        
+  onSideBarButtonsClick={onSideBarButtonsClick}
+  onLightContainerClick={onLightContainerClick}
+  onLightContainer1Click={onLightContainer1Click}
+  onLightContainer12Click={onLightContainer12Click}
         />
         <section className="filter-chain-wrapper">
           <div className="filter-chain">

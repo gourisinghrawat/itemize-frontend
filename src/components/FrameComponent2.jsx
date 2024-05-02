@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import ProductRow from "./ProductRow";
 import "./FrameComponent2.css";
 
-import SidePanel from "../components/SidePanel";
+import SidePanel2 from "../components/SidePanel2";
 const FrameComponent = () => {
   const navigate = useNavigate();
 
@@ -47,7 +47,7 @@ const FrameComponent = () => {
     <section className="frame-section">
       <div className="side-panel-parent1">
         <div className="side-panel2">
-          <SidePanel
+          <SidePanel2
           onSideBarButtonsClick={onSideBarButtonsClick}
           onLightContainerClick={onLightContainerClick}
           onLightContainer1Click={onLightContainer1Click}
