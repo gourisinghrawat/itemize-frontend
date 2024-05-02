@@ -4,7 +4,108 @@ import { Form } from "react-bootstrap";
 import Credentials from "./Credentials";
 import { useNavigate } from "react-router-dom";
 import "./RegisterationForm.css";
+// class App extends Component{
+//   constructor(){
+//     super()
+//     this.state={
+//       name: '',
+//     email: '',
+//     phoneNumber: '',
+//     role: '',
+//     password: '',
+//     confirmPassword: ''
+//     }
+//   }
+//   changeName(event){
+//     this.setState({
+//       name:event.target.value
+//     })
+//   }
+//   changeEmail(event){
+//     this.setState({
+//       email:event.target.value
+//     })
+//   }
+//   changePhone(event){
+//     this.setState({
+//       phoneNumber:event.target.value
+//     })
+//   }
+//   changeRole(event){
+//     this.setState({
+//       role:event.target.value
+//     })
+//   }
+//   changePassword(event){
+//     this.setState({
+//       password:event.target.value
+//     })
+//   }
+//   changeConfirm(event){
+//     this.setState({
+//       confirmPassword:event.target.value
+//     })
+//   }
+// }
+/*
+import { registerUser } from './RegisterForm';
+ // Import the registerUser function
 
+const Register = () => {
+  const [user, setUser] = useState({
+    name: '',
+    email: '',
+    phoneNumber: '',
+    role: '',
+    password: '',
+    confirmPassword: ''
+  });
+  const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(false);
+
+  const handleChange = (e) => {
+    setUser({ ...user, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    setError(null);
+
+
+    try {
+      const response = await fetch(`http://localhost:8000/api/auth/register-page`,{
+        method:"POST",
+        headers:{
+          'Content-Type':"application/json"
+        },
+        body :JSON.stringify(user)
+      });
+      console.log('User registered successfully:', response);
+
+      // Handle successful registration, e.g., show a success message or redirect the user
+    } catch (error) {
+      console.error('Error registering user:', error);
+      setError(error.message || 'An error occurred');
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  return (
+    <form onSubmit={handleSubmit}>
+      <input type="text" name="name" value={user.name} onChange={handleChange} placeholder="Name" />
+      <input type="email" name="email" value={user.email} onChange={handleChange} placeholder="Email" />
+      <input type="text" name="phoneNumber" value={user.phoneNumber} onChange={handleChange} placeholder="Phone Number" />
+      <input type="text" name="role" value={user.role} onChange={handleChange} placeholder="Role" />
+      <input type="password" name="password" value={user.password} onChange={handleChange} placeholder="Password" />
+      <input type="password" name="confirmPassword" value={user.confirmPassword} onChange={handleChange} placeholder="Confirm Password" />
+      <button type="submit">Register</button>
+      {error && <div>{error}</div>}
+    </form>
+  );
+};
+*/
 const RegisterationForm = () => {
   const navigate = useNavigate();
 
