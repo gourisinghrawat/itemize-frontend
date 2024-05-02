@@ -1,6 +1,7 @@
 import RegisterationForm from "../components/RegisterationForm";
 import Footer1 from "../components/Footer1";
 import "./RegisterPage.css";
+//import RegistrationForm from '../components/RegisterationForm'; // Import the RegistrationForm component
 
 const RegisterPage = () => {
   return (
