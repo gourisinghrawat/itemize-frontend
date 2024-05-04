@@ -88,7 +88,7 @@ const FrameComponent11 = () => {
         <div className="frame-parent9">
           <div className="frame-parent10">
             <div className="back-button-parent">
-              <button className="back-button2">
+              {/* <button className="back-button2">
                 <div className="background42" />
                 <div className="back-button-child">
                   <div className="vector-group">
@@ -97,8 +97,8 @@ const FrameComponent11 = () => {
                   </div>
                 </div>
                 <div className="text40">Back</div>
-              </button>
-              <button className="side-bar">
+              </button> */}
+              {/* <button className="side-bar">
                 <div className="button35">
                   <img
                     className="background-icon4"
@@ -107,7 +107,7 @@ const FrameComponent11 = () => {
                   />
                   <div className="signup-text6">Clear List</div>
                 </div>
-              </button>
+              </button> */}
             </div>
             <div className="frame-wrapper6">
               <div className="dropdowns-parent">
@@ -120,7 +120,7 @@ const FrameComponent11 = () => {
                   </div>
                 </button>
                 <div className="export-button-wrapper">
-                  <button className="export-button">
+                  {/* <button className="export-button">
                     <img
                       className="sharefill-icon"
                       alt=""
@@ -130,7 +130,7 @@ const FrameComponent11 = () => {
                     <div className="text-container">
                       <div className="text42">Export</div>
                     </div>
-                  </button>
+                  </button> */}
                 </div>
                 <div className="add-pdt-button-wrapper">
                   <button

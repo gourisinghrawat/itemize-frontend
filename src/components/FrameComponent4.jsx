@@ -5,12 +5,12 @@ const FrameComponent = () => {
   return (
     <div className="edit-cart-page-inner">
       <div className="close-circle-parent">
-        <img
+        {/* <img
           className="close-circle-icon4"
           loading="lazy"
           alt=""
           src="/closecircle.svg"
-        />
+        /> */}
         <div className="cart-title-bar1">
           <div className="i-d-holder">
             <div className="sales-and-type">

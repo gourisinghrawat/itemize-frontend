@@ -7,7 +7,7 @@ const Dropdowns = ({ dropdownTitle }) => {
     <div className="dropdowns8">
       <div className="dropdown-title5">{dropdownTitle}</div>
       <Form.Select className="input-field-formselect5">
-        <option>Order</option>
+        <option>Order </option>
         <option value="Purchase">Purchase</option>
         <option value="Sales">Sales</option>
         <option value="Return">Return</option>

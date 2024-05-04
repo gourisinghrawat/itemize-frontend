@@ -10,6 +10,10 @@ const SigninForm = () => {
     navigate("/dashboard");
   }, [navigate]);
 
+  const onButton2Click = useCallback(() => {
+    navigate("/");
+  }, [navigate]);
+
   return (
     <form className="signin-form">
       <div className="mediablr">
@@ -36,14 +40,20 @@ const SigninForm = () => {
           input_type="password"
           typeHerePlaceholder="Enter your password"
         />
-        <Credentials
+        {/* <Credentials
+        
           inputTextLabel="Login"
           idval="login_confirm"
           input_type="submit"
           typeHerePlaceholder="Login"
-        />
+        /> */}
+         <div className="button-frame2">
+        <button className="button31inp" onClick={onButtonClick}>
+          <div className="link-link1">Submit</div>
+        </button>
+      </div>
         <div className="button-frame">
-        <button className="button31" onClick={onButtonClick}>
+        <button className="button31" onClick={onButton2Click}>
           <div className="link-link">cancel</div>
         </button>
       </div>

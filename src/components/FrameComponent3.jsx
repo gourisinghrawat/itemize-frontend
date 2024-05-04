@@ -11,12 +11,12 @@ const FrameComponent = () => {
             <div className="order-type">Order Type</div>
           </div>
           <div className="i-n-s-t-a-n-c-e">
-            <img
+            {/* <img
               className="close-circle-icon2"
               loading="lazy"
               alt=""
               src="/closecircle.svg"
-            />
+            /> */}
           </div>
         </div>
         <div className="cart-title-bar-parent">

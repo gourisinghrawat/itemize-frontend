@@ -9,7 +9,11 @@ const RegisterationForm = () => {
   const navigate = useNavigate();
 
   const onButtonClick = useCallback(() => {
-    navigate("/dashboard-start");
+    navigate("/dashboard");
+  }, [navigate]);
+
+  const onButton2Click = useCallback(() => {
+    navigate("/");
   }, [navigate]);
 
   return (
@@ -21,7 +25,7 @@ const RegisterationForm = () => {
       <div className="credentials-group">
         <Credentials
           inputTextLabel="Name"
-          typeHerePlaceholder="name"
+          typeHerePlaceholder="Name"
           type="text"
         />
         <Credentials
@@ -47,23 +51,31 @@ const RegisterationForm = () => {
           </Form.Select>
         </div>
         <Credentials
-          inputTextLabel="password"
-          typeHerePlaceholder="Enter username"
+          inputTextLabel="Password"
+          typeHerePlaceholder="Enter a valid password"
           input_type="password"
         />
         <Credentials
           inputTextLabel="Confirm Password"
-          typeHerePlaceholder="Enter username"
+          typeHerePlaceholder="Enter your password"
           input_type="password"
         />
-        <Credentials
-          inputTextLabel="register"
+        {/* <Credentials
+          inputTextLabel="Register"
           typeHerePlaceholder="register"
           input_type="submit"
           idval="register_conf"
-        />
-        <div className="button-container">
+        /> */}
+<div className="button-container">
+<div className="button-frame3">
         <button className="button18" onClick={onButtonClick}>
+          <div className="input-field-instance">Submit</div>
+          <div className="background26" />
+        </button>
+        </div>
+      </div>
+        <div className="button-container">
+        <button className="button18" onClick={onButton2Click}>
           <div className="input-field-instance">Cancel</div>
           <div className="background26" />
         </button>

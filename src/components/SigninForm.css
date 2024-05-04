@@ -152,7 +152,25 @@
   color: var(--d9d9d94);
   text-align: center;
 }
+
+.link-link1 {
+  flex:11;
+  position: relative;
+  font-size: var(--font-size-lg);
+  line-height: 20px;
+  font-family: var(--font-roboto);
+  color: var(--d9d9d94);
+  text-align: center;
+}
 .button-frame,
+.signin-form {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.button-frame2,
 .signin-form {
   display: flex;
   flex-direction: row;
@@ -162,7 +180,18 @@
 .button31 {
   cursor: pointer;
   border: 1px solid var(--d9d9d94);
-  padding: var(--padding-5xs) var(--padding-20xl);
+  padding: var(--padding-7xs) var(--padding-10xl);
+  background-color: transparent;
+  flex: 1;
+  border-radius: var(--br-8xs);
+  overflow: hidden;
+  z-index: 2;
+}
+
+.button31inp {
+  cursor: pointer;
+  border: 1px solid var(--d9d9d94);
+  padding: var(--padding-xs) var(--padding-12xl);
   background-color: transparent;
   flex: 1;
   border-radius: var(--br-8xs);
@@ -174,7 +203,21 @@
   border: 1px solid var(--d9d9d93);
   box-sizing: border-box;
 }
+
+.button31inp:hover {
+  background-color: var(--color-darkslategray-700);
+  border: 1px solid var(--d9d9d93);
+  box-sizing: border-box;
+}
+
 .button-frame,
+.signin-form {
+  width: 149px;
+  padding: 0 var(--padding-5xs) 0 var(--padding-4xs-5);
+  box-sizing: border-box;
+}
+
+.button-frame2,
 .signin-form {
   width: 149px;
   padding: 0 var(--padding-5xs) 0 var(--padding-4xs-5);

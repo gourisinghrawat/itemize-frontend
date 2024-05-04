@@ -1,5 +1,5 @@
 import Navbar from "../components/Navbar";
-import FrameComponent from "../components/FrameComponent";
+import FrameComponent4 from "../components/FrameComponent4";
 import "./EditCartPage.css";
 
 const EditCartPage = () => {
@@ -7,7 +7,7 @@ const EditCartPage = () => {
     <div className="edit-cart-page">
       <Navbar />
       <img className="blurbg-icon11" alt="" src="/blurbg.svg" />
-      <FrameComponent />
+      <FrameComponent4 />
     </div>
   );
 };

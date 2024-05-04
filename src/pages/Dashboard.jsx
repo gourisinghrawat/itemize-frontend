@@ -66,7 +66,7 @@ const Dashboard = () => {
             <img className="rectangle-icon" alt="" src="/rectangle@2x.png" />
             <div className="d-p">
               <div className="rectangle15" />
-              <button className="back-button">
+              {/* <button className="back-button">
                 <div className="background11" />
                 <div className="company-field-wrapper">
                   <div className="company-field">
@@ -75,7 +75,7 @@ const Dashboard = () => {
                   </div>
                 </div>
                 <div className="cross-icon">Back</div>
-              </button>
+              </button> */}
               <div className="amount-label">
                 <div className="transaction-row">
                   <div className="header-row">
@@ -349,7 +349,7 @@ const Dashboard = () => {
                         </div>
                       </div>
                       <div className="error-corrector-plus-plus">
-                        <div className="text2">See all</div>
+                        
                       </div>
                     </div>
                   </div>

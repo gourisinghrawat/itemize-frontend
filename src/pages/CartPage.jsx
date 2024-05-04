@@ -1,7 +1,7 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
-import FrameComponent from "../components/FrameComponent";
+import FrameComponent3 from "../components/FrameComponent3";
 import "./CartPage.css";
 
 const CartPage = () => {
@@ -22,7 +22,7 @@ const CartPage = () => {
         onPersonIconClick={onPersonIconClick}
       />
       <img className="blurbg-icon10" alt="" src="/blurbg.svg" />
-      <FrameComponent />
+      <FrameComponent3 />
     </div>
   );
 };

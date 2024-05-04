@@ -2,7 +2,8 @@ import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import TextInputs from "../components/TextInputs";
-import Dropdowns from "../components/Dropdowns";
+import Dropdowns11 from "../components/Dropdowns11";
+import Dropdowns2 from "../components/Dropdowns2";
 import "./EditOrderPage.css";
 
 const EditOrderPage = () => {
@@ -24,6 +25,10 @@ const EditOrderPage = () => {
     navigate("/cart-page");
   }, [navigate]);
 
+  const onButton3Click = useCallback(() => {
+    navigate("/order-page");
+  }, [navigate]);
+
   return (
     <div className="edit-order-page">
       <Navbar
@@ -38,39 +43,35 @@ const EditOrderPage = () => {
             <div className="product-form1">
               <TextInputs
                 inputTextLabel="Order Id"
-                icon="pending_I33:2362;33:1876;12:554"
                 propWidth="368px"
                 propFlex="unset"
                 propMinWidth="unset"
               />
               <TextInputs
                 inputTextLabel="Date Created"
-                icon="pending_I33:2362;33:1877;12:554"
                 propWidth="368px"
                 propFlex="unset"
                 propMinWidth="unset"
               />
-              <Dropdowns dropdownTitle="Type" />
-              <Dropdowns dropdownTitle="Status" />
+              <Dropdowns11 dropdownTitle="Type" />
+              <Dropdowns2 dropdownTitle="Status" />
               <TextInputs
                 inputTextLabel="Partner Id"
-                icon="pending_I33:2362;33:1880;12:554"
                 propWidth="368px"
                 propFlex="unset"
                 propMinWidth="unset"
               />
               <TextInputs
                 inputTextLabel="Bill"
-                icon="pending_I33:2362;33:1881;12:554"
                 propWidth="368px"
                 propFlex="unset"
                 propMinWidth="unset"
               />
             </div>
-            <button className="button11" onClick={onButtonClick}>
-              <div className="text13">Edit</div>
+            <button className="button11" onClick={onButton3Click}>
+              <div className="text13">Save Changes</div>
             </button>
-            <button className="button12">
+            <button className="button12"onClick={onButton3Click}>
               <div className="text14">Cancel</div>
             </button>
             <button className="button13" onClick={onButton2Click}>

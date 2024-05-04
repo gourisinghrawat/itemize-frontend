@@ -2,7 +2,8 @@ import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import TextInputs from "../components/TextInputs";
-import Dropdowns from "../components/Dropdowns";
+import Dropdowns11 from "../components/Dropdowns11";
+import Dropdowns2 from "../components/Dropdowns2";
 import "./ViewOrderPage.css";
 
 const ViewOrderPage = () => {
@@ -19,6 +20,11 @@ const ViewOrderPage = () => {
   const onButtonClick = useCallback(() => {
     navigate("/edit-order-page");
   }, [navigate]);
+
+  const onButton1Click = useCallback(() => {
+    navigate("/order-page");
+  }, [navigate]);
+
 
   const onButton2Click = useCallback(() => {
     navigate("/cart-page");
@@ -38,27 +44,24 @@ const ViewOrderPage = () => {
             <div className="product-form">
               <TextInputs
                 inputTextLabel="Order Id"
-                icon="pending_I33:2303;33:1876;12:554"
               />
               <TextInputs
                 inputTextLabel="Date Created"
-                icon="pending_I33:2303;33:1877;12:554"
+              
                 propWidth="368px"
                 propFlex="unset"
                 propMinWidth="unset"
               />
-              <Dropdowns dropdownTitle="Type" />
-              <Dropdowns dropdownTitle="Status" />
+              <Dropdowns11 dropdownTitle="Type" />
+              <Dropdowns2 dropdownTitle="Status" />
               <TextInputs
                 inputTextLabel="Partner Id"
-                icon="pending_I33:2303;33:1880;12:554"
                 propWidth="368px"
                 propFlex="unset"
                 propMinWidth="unset"
               />
               <TextInputs
                 inputTextLabel="Bill"
-                icon="pending_I33:2303;33:1881;12:554"
                 propWidth="368px"
                 propFlex="unset"
                 propMinWidth="unset"
@@ -67,7 +70,8 @@ const ViewOrderPage = () => {
             <button className="button8" onClick={onButtonClick}>
               <div className="label-and-title">Edit</div>
             </button>
-            <button className="button9">
+            <button className="button9" 
+            onClick={onButton1Click}>
               <div className="text11">Cancel</div>
             </button>
             <button className="button10" onClick={onButton2Click}>

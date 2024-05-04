@@ -23,7 +23,7 @@ const Checkbox = () => {
       <div className="frame-parent14">
         <div className="back-button-container-parent">
           <div className="back-button-container1">
-            <button className="back-button5">
+            {/* <button className="back-button5">
               <div className="background70" />
               <div className="back-button6">
                 <div className="vector-parent1">
@@ -32,8 +32,8 @@ const Checkbox = () => {
                 </div>
               </div>
               <div className="dropdown-input-field">Back</div>
-            </button>
-            <button className="side-bar2">
+            </button> */}
+            {/* <button className="side-bar2">
               <div className="button50">
                 <img
                   className="background-icon8"
@@ -42,7 +42,7 @@ const Checkbox = () => {
                 />
                 <div className="signup-text10">Clear List</div>
               </div>
-            </button>
+            </button> */}
           </div>
           <div className="row-orders-instance">
             <div className="dropdowns-group">
@@ -55,7 +55,7 @@ const Checkbox = () => {
                 </div>
               </button>
               <div className="export-button-container">
-                <button className="export-button2">
+                {/* <button className="export-button2">
                   <img
                     className="sharefill-icon2"
                     alt=""
@@ -65,7 +65,7 @@ const Checkbox = () => {
                   <div className="edit-fill-gradient">
                     <div className="text63">Export</div>
                   </div>
-                </button>
+                </button> */}
               </div>
               <div className="add-pdt-button-container">
                 <button

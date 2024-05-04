@@ -65,7 +65,7 @@ const DashboardUser = () => {
             <img className="rectangle-icon1" alt="" src="/rectangle@2x.png" />
             <div className="rectangle-group">
               <div className="rectangle16" />
-              <button className="back-button1">
+              {/* <button className="back-button1">
                 <div className="background14" />
                 <div className="back-button-inner">
                   <div className="vector-parent">
@@ -74,7 +74,7 @@ const DashboardUser = () => {
                   </div>
                 </div>
                 <div className="text3">Back</div>
-              </button>
+              </button> */}
               <div className="frame-wrapper1">
                 <div className="frame-parent1">
                   <div className="frame-wrapper2">
@@ -89,10 +89,10 @@ const DashboardUser = () => {
                                 <div className="text4">
                                   <input
                                     className="type-here"
-                                    placeholder="name"
+                                    placeholder="Name"
                                     type="text"
                                   />
-                                  <img className="icon2" alt="" />
+                                  {/* <img className="icon2" alt="" /> */}
                                 </div>
                               </div>
                             </div>
@@ -107,7 +107,7 @@ const DashboardUser = () => {
                                     placeholder="Email"
                                     type="text"
                                   />
-                                  <img className="icon3" alt="" />
+                                  {/* <img className="icon3" alt="" /> */}
                                 </div>
                               </div>
                             </div>
@@ -124,7 +124,7 @@ const DashboardUser = () => {
                                     placeholder="Phone Number"
                                     type="text"
                                   />
-                                  <img className="icon4" alt="" />
+                                  {/* <img className="icon4" alt="" /> */}
                                 </div>
                               </div>
                             </div>
@@ -132,15 +132,15 @@ const DashboardUser = () => {
                           <Dropdowns />
                           <div className="credentials3">
                             <div className="username3">
-                              <div className="input-text-label3">password</div>
+                              <div className="input-text-label3">Password</div>
                               <div className="input-field3">
                                 <div className="text7">
                                   <input
                                     className="type-here3"
-                                    placeholder="Enter username"
+                                    placeholder="Enter your password"
                                     type="text"
                                   />
-                                  <img className="icon5" alt="" />
+                                  {/* <img className="icon5" alt="" /> */}
                                 </div>
                               </div>
                             </div>
@@ -154,10 +154,10 @@ const DashboardUser = () => {
                                 <div className="text8">
                                   <input
                                     className="type-here4"
-                                    placeholder="Enter username"
+                                    placeholder="Enter your password"
                                     type="text"
                                   />
-                                  <img className="icon6" alt="" />
+                                  {/* <img className="icon6" alt="" /> */}
                                 </div>
                               </div>
                             </div>

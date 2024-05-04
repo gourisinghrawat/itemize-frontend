@@ -59,7 +59,7 @@ const FrameComponent = () => {
             <div className="back-button3">
               <div className="back-button-inner1">
                 <div className="back-button-container">
-                  <button className="back-button4">
+                  {/* <button className="back-button4">
                     <div className="background54" />
                     <div className="back-button-inner2">
                       <div className="vector-container">
@@ -76,8 +76,8 @@ const FrameComponent = () => {
                       </div>
                     </div>
                     <div className="side-panel-instance">Back</div>
-                  </button>
-                  <div className="side-bar1">
+                  </button> */}
+                  {/* <div className="side-bar1">
                     <div className="button41">
                       <img
                         className="background-icon6"
@@ -86,7 +86,7 @@ const FrameComponent = () => {
                       />
                       <div className="signup-text8">Clear List</div>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
               <div className="dropdown-instance-parent">
@@ -109,7 +109,7 @@ const FrameComponent = () => {
                   </div>
                 </div>
                 <div className="product-rows">
-                  <button className="export-button1">
+                  {/* <button className="export-button1">
                     <img
                       className="sharefill-icon1"
                       alt=""
@@ -119,7 +119,7 @@ const FrameComponent = () => {
                     <div className="product-rows1">
                       <div className="product-rows2">Export</div>
                     </div>
-                  </button>
+                  </button> */}
                 </div>
                 <div className="add-pdt-button1" onClick={onAddPdtButtonClick}>
                   <div className="background56" />
