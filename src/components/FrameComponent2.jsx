@@ -2,7 +2,7 @@ import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import ProductRow from "./ProductRow";
 import "./FrameComponent2.css";
-
+import Filter from "./filter";
 import SidePanel2 from "../components/SidePanel2";
 const FrameComponent = () => {
   const navigate = useNavigate();
@@ -46,19 +46,14 @@ const FrameComponent = () => {
   return (
     <section className="frame-section">
       <div className="side-panel-parent1">
-        <div className="side-panel2">
-          <SidePanel2
-          onSideBarButtonsClick={onSideBarButtonsClick}
-          onLightContainerClick={onLightContainerClick}
-          onLightContainer1Click={onLightContainer1Click}
-          onLightContainer12Click={onLightContainer12Click}
-        />
-        </div>
+      <SidePanel2/>
         <div className="frame-parent11">
+        
           <div className="back-button-group">
             <div className="back-button3">
               <div className="back-button-inner1">
                 <div className="back-button-container">
+                
                   {/* <button className="back-button4">
                     <div className="background54" />
                     <div className="back-button-inner2">
@@ -89,8 +84,13 @@ const FrameComponent = () => {
                   </div> */}
                 </div>
               </div>
+              
               <div className="dropdown-instance-parent">
-                <div className="dropdown-instance">
+              <input className="searchpdt" placeholder="search"
+                  type="search"
+                />
+              <Filter/>
+                {/*<div className="dropdown-instance">
                   <div className="dropdowns5">
                     <div className="input-field11">
                       <div className="text51">
@@ -107,9 +107,11 @@ const FrameComponent = () => {
                       </div>
                     </div>
                   </div>
-                </div>
-                <div className="product-rows">
-                  {/* <button className="export-button1">
+                </div>*/}
+                
+                  {/* 
+                  <div className="product-rows">
+                  <button className="export-button1">
                     <img
                       className="sharefill-icon1"
                       alt=""
@@ -119,8 +121,8 @@ const FrameComponent = () => {
                     <div className="product-rows1">
                       <div className="product-rows2">Export</div>
                     </div>
-                  </button> */}
-                </div>
+                  </button></div> */}
+                
                 <div className="add-pdt-button1" onClick={onAddPdtButtonClick}>
                   <div className="background56" />
                   <div className="text52">Add New Product +</div>
@@ -142,21 +144,23 @@ const FrameComponent = () => {
               </div>
             </div>
           </div>
+          {pdtdata.map((val, key) => {
+                    return (
           <ProductRow
             onButtonContainerClick={onButtonContainerClick}
             onButtonContainer2Click={onButtonContainer2Click}
-          />
+            pdt={val}
+          />)})}
         </div>
       </div>
-      <ProductRow
-        propAlignSelf="unset"
-        propWidth="1314px"
-        propFlexWrap="wrap"
-        onButtonContainerClick={onButtonContainer3Click}
-        onButtonContainer2Click={onButtonContainer4Click}
-      />
+      
     </section>
   );
 };
 
 export default FrameComponent;
+
+const pdtdata=[{id:88888, name:"toothpaste", brand:"colgate", supplier:"s1", price:234,status:"in stock", stock:23},
+{id:1, name:"toothpaste", brand:"colgate", supplier:"s1", price:234,status:"in stock", stock:23},
+{id:1, name:"toothpaste", brand:"colgate", supplier:"s1trhtyrtyrtryt", price:234,status:"in stock", stock:23}
+]

@@ -6,7 +6,7 @@ const ProductRow = ({
   propWidth,
   propFlexWrap,
   onButtonContainerClick,
-  onButtonContainer2Click,
+  onButtonContainer2Click, pdt
 }) => {
   const productRowStyle = useMemo(() => {
     return {
@@ -26,26 +26,26 @@ const ProductRow = ({
       <div className="product-row-child" />
       <div className="product-button-parent" style={frameDivStyle}>
         <div className="product-button">
-          <div className="div22">1</div>
+          <div className="div22">{pdt.id}</div>
         </div>
         <div className="product-button1">
-          <div className="product-a">product A</div>
+          <div className="product-a">{pdt.name}</div>
         </div>
         <div className="product-button2">
-          <div className="lorem-ipsum1">lorem ipsum</div>
+          <div className="lorem-ipsum1">{pdt.brand}</div>
         </div>
         <div className="product-button3">
-          <div className="div23">200</div>
+          <div className="div23">{pdt.supplier}</div>
         </div>
         <div className="product-button4">
-          <div className="div24">400</div>
+          <div className="div24">{pdt.price}</div>
         </div>
         <div className="status1">
           <img className="vector-icon4" alt="" src="/vector-2.svg" />
-          <div className="in-stock">in stock</div>
+          <div className="in-stock">{pdt.status}</div>
         </div>
         <div className="product-button5">
-          <div className="div25">40</div>
+          <div className="div25">{pdt.stock}</div>
         </div>
         <div className="product-button6">
           <div className="button38" onClick={onButtonContainerClick}>
@@ -81,3 +81,5 @@ const ProductRow = ({
 };
 
 export default ProductRow;
+
+const pdtdata=[{id:1, name:"toothpaste", brand:"colgate", supplier:"s1", price:234,status:"in stock", stock:23}]

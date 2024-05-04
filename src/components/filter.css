@@ -14,7 +14,7 @@
 .dropdowns4 {
   display: flex;
   contain: content;
-  width: 320px;
+  width: 500px;
   flex-direction: row;
   gap: var(--gap-5xs);
   text-align: left;
