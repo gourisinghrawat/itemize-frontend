@@ -46,7 +46,7 @@ const FrameComponent = () => {
   return (
     <section className="frame-section">
       <div className="side-panel-parent1">
-      <SidePanel2/>
+        <SidePanel2/>
         <div className="frame-parent11">
         
           <div className="back-button-group">

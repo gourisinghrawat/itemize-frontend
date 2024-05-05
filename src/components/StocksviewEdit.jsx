@@ -76,7 +76,7 @@ const StocksviewEdit = () => {
         </div>
         <div className="p-d-t-button">
           <button className="button44">
-            <div className="background59">Edit</div>
+            <div className="background59">Save</div>
             <div className="background60" />
           </button>
           <button className="button45" onClick={onButton1Click}>

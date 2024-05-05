@@ -1,4 +1,4 @@
-import { useCallback } from "react";
+import { useCallback, useState } from "react";
 import Credentials from "./Credentials"; // import credentials
 import { useNavigate } from "react-router-dom";
 import "./SigninForm.css";// remove text inputs yahan pe or jo code mein likhe h
@@ -13,14 +13,37 @@ const SigninForm = () => {
   const onButton2Click = useCallback(() => {
     navigate("/");
   }, [navigate]);
+  const handlelogin=(e)=>{
+    setForm({
+      ...form,
+      [e.target.name] : e.target.value
+    })
+  }
+  const[form, setForm]=useState({});
+
+
+  const handleSubmit=async (e)=>{
+    e.preventDefault();
+    const response= await fetch('http://localhost:8080/demo',{
+      method:'POST',
+      body:JSON.stringify(form),
+      headers:{
+        'Content-Type':'application/json'
+      }
+      
+    })
+    const data= await response.json();
+    console.log(data);
+  }
+
 
   return (
-    <form className="signin-form">
+    <div className="signin-form">
       <div className="mediablr">
         <div className="media-background2" />
         <div className="background30" />
       </div>
-      <div className="logo-parent">
+      <form className="logo-parent" onSubmit={handleSubmit}>
         <h2 className="logo9">Login</h2>
         
         <div className="input-field-container">
@@ -32,6 +55,8 @@ const SigninForm = () => {
           typeHerePlaceholder=" Enter your valid Email"
           idval="email_id"
           input_type="email"
+          cname="usermail"
+          cchange={handlelogin}
         />
             
             <Credentials
@@ -39,6 +64,8 @@ const SigninForm = () => {
           idval="login_password"
           input_type="password"
           typeHerePlaceholder="Enter your password"
+          cname="userpass"
+          cchange={handlelogin}
         />
         {/* <Credentials
         
@@ -47,7 +74,9 @@ const SigninForm = () => {
           input_type="submit"
           typeHerePlaceholder="Login"
         /> */}
-         <div className="button-frame2">
+        <input type="submit" className="button31"/>
+        <input type="cancel" placeholder="cancel" className="button31"  onClick={onButton2Click}/>
+         {/*<div className="button-frame2">
         <button className="button31inp" onClick={onButtonClick}>
           <div className="link-link1">Submit</div>
         </button>
@@ -56,7 +85,7 @@ const SigninForm = () => {
         <button className="button31" onClick={onButton2Click}>
           <div className="link-link">cancel</div>
         </button>
-      </div>
+      </div>*/}
           </div>
           </div>
           <div className="input-field-container-inner">
@@ -70,12 +99,12 @@ const SigninForm = () => {
             </div>
           </div>
         </div>
-      </div>
+      </form>
       <div className="text-wrapper">
         <div className="text31" />
       </div>
       
-    </form>
+    </div>
   );
 };
 

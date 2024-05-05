@@ -15,6 +15,7 @@ const ProductRow = ({
     };
   }, [propAlignSelf, propWidth]);
 
+  
   const frameDivStyle = useMemo(() => {
     return {
       flexWrap: propFlexWrap,
@@ -55,7 +56,7 @@ const ProductRow = ({
         </div>
         <div className="product-button7">
           <div className="button39" onClick={onButtonContainer2Click}>
-            <div className="text47">View</div>
+            <div className="text47">view/edit</div>
             <div className="background49" />
           </div>
         </div>
@@ -67,12 +68,12 @@ const ProductRow = ({
               alt=""
               src="/edit-delete.svg"
             />
-            <img
+            {/*<img
               className="edit-fill0-wght400-grad0-opsz2-icon"
               loading="lazy"
               alt=""
               src="/edit-fill0-wght400-grad0-opsz24-1.svg"
-            />
+            />*/}
           </div>
         </div>
       </div>

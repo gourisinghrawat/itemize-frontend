@@ -1,6 +1,6 @@
 import "./Credentials.css";
 
-const Credentials = ({ inputTextLabel, typeHerePlaceholder, idval, input_type }) => {
+const Credentials = ({ inputTextLabel,cname, cchange, typeHerePlaceholder, idval, input_type }) => {
   if(input_type==="submit"){
     return(
       <div className="button31">
@@ -25,6 +25,8 @@ const Credentials = ({ inputTextLabel, typeHerePlaceholder, idval, input_type })
                 placeholder={typeHerePlaceholder}
                 id={idval}
                 type={input_type}
+                name={cname}
+                onChange={cchange}
               />
         </div>
       </div>
