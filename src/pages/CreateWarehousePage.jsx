@@ -2,6 +2,7 @@ import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import WarehouseNew1 from "../components/WarehouseNew1";
 import "./CreateWarehousePage.css";
+import Navbar1 from "../components/Navbar1";
 
 const CreateWarehousePage = () => {
   const navigate = useNavigate();
@@ -16,32 +17,10 @@ const CreateWarehousePage = () => {
 
   return (
     <div className="create-warehouse-page">
-      <header className="navbar1">
-        <h1 className="logo1" onClick={onLogoTextClick}>
-          ITEMIZE
-        </h1>
-        <div className="icons">
-          <img
-            className="notificationsstyle4-icon"
-            loading="lazy"
-            alt=""
-            src="/notificationsstyle4.svg"
-          />
-          <img
-            className="person-icon"
-            loading="lazy"
-            alt=""
-            src="/person.svg"
-            onClick={onPersonIconClick}
-          />
-          <img
-            className="reorder-threeoutline-icon"
-            loading="lazy"
-            alt=""
-            src="/reorderthreeoutline.svg"
-          />
-        </div>
-      </header>
+      <Navbar1
+        onLogoTextClick={onLogoTextClick}
+        onPersonIconClick={onPersonIconClick}
+      />
       <div className="dashboard1">
         <div className="rectangle5" />
         <img

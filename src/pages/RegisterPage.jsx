@@ -11,11 +11,7 @@ const RegisterPage = () => {
       </header>
       <section className="signin-panel">
         <div className="media">
-          <img
-            className="media-background-icon"
-            alt=""
-            src="/media-background@2x.png"
-          />
+          
           <div className="media-background" />
           <RegisterationForm />
         </div>

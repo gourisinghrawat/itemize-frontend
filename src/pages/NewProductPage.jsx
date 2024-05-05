@@ -1,6 +1,6 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
-import Navbar from "../components/Navbar";
+import Navbar1 from "../components/Navbar1";
 import NewProduct from "../components/NewProduct";
 import "./NewProductPage.css";
 
@@ -17,7 +17,7 @@ const NewProductPage = () => {
 
   return (
     <div className="new-product-page">
-      <Navbar
+      <Navbar1
         onLogoTextClick={onLogoTextClick}
         onPersonIconClick={onPersonIconClick}
       />

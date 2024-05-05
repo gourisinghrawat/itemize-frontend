@@ -1,6 +1,6 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
-import Navbar from "../components/Navbar";
+import Navbar1 from "../components/Navbar1";
 import FrameComponent2 from "../components/FrameComponent2";
 import "./InventoryPage.css";
 import SidePanel from "../components/SidePanel2";
@@ -17,7 +17,7 @@ const InventoryPage = () => {
 
   return (
     <div className="inventory-page">
-      <Navbar
+      <Navbar1
         onLogoTextClick={onLogoTextClick}
         onPersonIconClick={onPersonIconClick}
       />

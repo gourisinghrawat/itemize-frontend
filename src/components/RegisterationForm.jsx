@@ -51,6 +51,7 @@ const RegisterationForm = () => {
           type="text"
           cname="uname"
           cchange={handlereg}
+          ifreq="true"
         />
         <Credentials
           inputTextLabel="Email"
@@ -58,6 +59,7 @@ const RegisterationForm = () => {
           type="email"
           cname="usermail"
           cchange={handlereg}
+          ifreq="true"
         />
         <Credentials
           inputTextLabel="Phone Number"
@@ -65,10 +67,11 @@ const RegisterationForm = () => {
           input_type="text"
           cname="phoneno"
           cchange={handlereg}
+          ifreq="true"
         />
         <div className="dropdowns">
           <div className="dropdown-title" >Company Role</div>
-          <Form.Select className="input-field-formselect" name="role" onChange={handlereg}>
+          <Form.Select className="input-field-formselect" name="role" onChange={handlereg} required="true">
             <option>Company Role</option>
             <option value="'Warehouse Manager'">'Warehouse Manager'</option>
             <option value="'Order Fulfillment Specialist'">
@@ -84,6 +87,7 @@ const RegisterationForm = () => {
           input_type="password"
           cname="pass"
           cchange={handlereg}
+          ifreq="true"
         />
         <Credentials
           inputTextLabel="Confirm Password"
@@ -91,6 +95,7 @@ const RegisterationForm = () => {
           input_type="password"
           cchange={handlereg}
           cname="passconfirm"
+          ifreq="true"
         />
         <input type="submit" placeholder="submit" className="buttonsubmit" onClick={onButtonClick}/>
         

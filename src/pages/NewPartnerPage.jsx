@@ -1,6 +1,6 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
-import Navbar from "../components/Navbar";
+import Navbar1 from "../components/Navbar1";
 import AddPartner from "../components/AddPartner";
 import "./NewPartnerPage.css";
 
@@ -17,7 +17,7 @@ const NewPartnerPage = () => {
 
   return (
     <div className="new-partner-page">
-      <Navbar
+      <Navbar1
         onLogoTextClick={onLogoTextClick}
         onPersonIconClick={onPersonIconClick}
       />

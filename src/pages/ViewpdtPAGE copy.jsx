@@ -1,6 +1,6 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
-import Navbar from "../components/Navbar";
+import Navbar1 from "../components/Navbar1";
 import StocksviewEdit from "../components/StocksviewEdit";
 import "./ViewpdtPAGE.css";
 
@@ -17,7 +17,7 @@ const ViewpdtPAGE = () => {
 
   return (
     <div className="viewpdt-page">
-      <Navbar
+      <Navbar1
         onLogoTextClick={onLogoTextClick}
         onPersonIconClick={onPersonIconClick}
       />

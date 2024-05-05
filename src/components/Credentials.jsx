@@ -1,6 +1,6 @@
 import "./Credentials.css";
 
-const Credentials = ({ inputTextLabel,cname, cchange, typeHerePlaceholder, idval, input_type }) => {
+const Credentials = ({ inputTextLabel,cname, cchange, typeHerePlaceholder, idval, input_type, ifreq }) => {
   if(input_type==="submit"){
     return(
       <div className="button31">
@@ -27,6 +27,7 @@ const Credentials = ({ inputTextLabel,cname, cchange, typeHerePlaceholder, idval
                 type={input_type}
                 name={cname}
                 onChange={cchange}
+                required={ifreq}
               />
         </div>
       </div>

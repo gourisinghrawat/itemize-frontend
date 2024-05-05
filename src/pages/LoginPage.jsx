@@ -11,11 +11,7 @@ const LoginPage = () => {
           <h2 className="logo2">ITEMIZE</h2>
         </header>
         <section className="media4">
-          <img
-            className="media-background-icon1"
-            alt=""
-            src="/media-background@2x.png"
-          />
+          
           <div className="media-background1" />
           <SigninForm />
         </section>

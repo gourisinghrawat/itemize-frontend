@@ -57,6 +57,7 @@ const SigninForm = () => {
           input_type="email"
           cname="usermail"
           cchange={handlelogin}
+          ifreq="true"
         />
             
             <Credentials
@@ -66,6 +67,7 @@ const SigninForm = () => {
           typeHerePlaceholder="Enter your password"
           cname="userpass"
           cchange={handlelogin}
+          ifreq="true"
         />
         {/* <Credentials
         
@@ -74,7 +76,7 @@ const SigninForm = () => {
           input_type="submit"
           typeHerePlaceholder="Login"
         /> */}
-        <input type="submit" className="button31"/>
+        <input type="submit" className="button31" on onClick={onButtonClick}/>
         <input type="cancel" placeholder="cancel" className="button31"  onClick={onButton2Click}/>
          {/*<div className="button-frame2">
         <button className="button31inp" onClick={onButtonClick}>

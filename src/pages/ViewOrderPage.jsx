@@ -1,6 +1,6 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
-import Navbar from "../components/Navbar";
+import Navbar1 from "../components/Navbar1";
 import TextInputs from "../components/TextInputs";
 import Dropdowns11 from "../components/Dropdowns11";
 import Dropdowns2 from "../components/Dropdowns2";
@@ -32,7 +32,7 @@ const ViewOrderPage = () => {
 
   return (
     <div className="view-order-page">
-      <Navbar
+      <Navbar1
         onLogoTextClick={onLogoTextClick}
         onPersonIconClick={onPersonIconClick}
       />

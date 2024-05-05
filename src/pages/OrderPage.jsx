@@ -1,6 +1,6 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
-import Navbar from "../components/Navbar";
+import Navbar1 from "../components/Navbar1";
 import SidePanel1 from "../components/SidePanel1";
 import Checkbox from "../components/Checkbox";
 import "./OrderPage.css";
@@ -18,7 +18,7 @@ const OrderPage = () => {
 
   return (
     <div className="order-page">
-      <Navbar
+      <Navbar1
         onLogoTextClick={onLogoTextClick}
         onPersonIconClick={onPersonIconClick}
       />

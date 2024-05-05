@@ -1,6 +1,6 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
-import Navbar from "../components/Navbar";
+import Navbar1 from "../components/Navbar1";
 import FrameComponent3 from "../components/FrameComponent3";
 import "./CartPage.css";
 
@@ -17,7 +17,7 @@ const CartPage = () => {
 
   return (
     <div className="cart-page">
-      <Navbar
+      <Navbar1
         onLogoTextClick={onLogoTextClick}
         onPersonIconClick={onPersonIconClick}
       />
