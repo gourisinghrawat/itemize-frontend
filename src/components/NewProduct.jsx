@@ -7,27 +7,27 @@ import React, { useState } from 'react';
 //cancel button activated
 const NewProduct = () => {
   const navigate = useNavigate();
-  const [name, setName] = useState('');
-  const [brand, setBrand] = useState('');
-  const [des, setDes] = useState('');
-  const [ups, setUPS] = useState('');
-  const [minstock, setMinStock] = useState('');  
-  const [supplier, setSupplier] = useState(''); 
-  const [price, setPrice] = useState('');
-  const [category, setCategory] = useState('');
+  const [form, setForm] = useState('');
 
-  const handleSubmit = (e) => {
-    console.log(e);
+
+  const handleSubmit=async (e)=>{
     e.preventDefault();
-    // Validate form data here if needed
-    const newProduct = { name, price: parseFloat(price) };
-    onAddProduct(newProduct);
-    setName('');
-    setPrice('');
-  };
-  const handleform= (e)=>{
-    console.log(e.target.value);
-    console.log(e.target.name);
+    const response= await fetch('http://localhost:8080/demo',{
+      method:'POST',
+      body:JSON.stringify(form),
+      headers:{
+        'Content-Type':'application/json'
+      }
+      
+    })
+    const data= await response.json();
+    console.log(data);
+  }
+  const handlepdt=(e)=>{
+    setForm({
+      ...form,
+      [e.target.name] : e.target.value
+    })
   }
 
   const onButtonClick = useCallback(() => {
@@ -35,47 +35,55 @@ const NewProduct = () => {
   }, [navigate]);
 
   return (
-    <form className="new-product">
+    <div className="new-product" >
       <h1 className="title16">New  Product</h1>
       <div className="product-form-wrapper">
-        <div className="product-form3">
-          <input placeholder="type here" name="pname" type="text" onChange={handleform}/>
+        <form className="product-form3" onSubmit={handleSubmit}>
           <TextInputs
             inputTextLabel="Name"
             input_type="text"
             pname="pname"
-            ponChange={handleform}
+            tchange={handlepdt}
           />
           <TextInputs
             inputTextLabel="description"
             input_type="text"
-            name="pdesp"
+            pname="pdesp"
+            tchange={handlepdt}
           />
-          <Dropdowns value={category}/>
+          <Dropdowns
+            dchange={handlepdt}
+            dname="category"
+          />
           <TextInputs
             inputTextLabel="Brand"
             input_type="text"
-            name="pbrand"
+            pname="pbrand"
+            tchange={handlepdt}
           />
           <TextInputs
             inputTextLabel="Unit Per stock"
             input_type="number"
-            name="pups"
+            pname="pups"
+            tchange={handlepdt}
           />
           <TextInputs
             inputTextLabel="minimum stock"
             input_type="number"
-            name="pminstock"
+            pname="pminstock"
+            tchange={handlepdt}
           />
           <TextInputs
             inputTextLabel="Supplier"
             input_type="text"
-            name="psupplier"
+            pname="psupplier"
+            tchange={handlepdt}
           />
           <TextInputs
             inputTextLabel="Price"
             input_type="number"
-            name="pprice"
+            pname="pprice"
+            tchange={handlepdt}
             
           />
           
@@ -84,7 +92,7 @@ const NewProduct = () => {
             <div className="content12">Cancel</div>
           </button>
           
-        </div>
+        </form>
 
       </div>
       {/*<div className="frame-parent12">
@@ -98,7 +106,7 @@ const NewProduct = () => {
           <div className="text54">Cancel</div>
         </button>
       </div>*/}
-    </form>
+    </div>
   );
 };
 

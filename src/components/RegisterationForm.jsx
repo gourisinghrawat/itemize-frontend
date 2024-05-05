@@ -1,4 +1,4 @@
-import { useCallback } from "react";
+import { useCallback, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Form } from "react-bootstrap";
 import Credentials from "./Credentials";
@@ -7,6 +7,28 @@ import "./RegisterationForm.css";
 
 const RegisterationForm = () => {
   const navigate = useNavigate();
+  
+  const[form, setForm]=useState({});
+  
+  const handlereg=(e)=>{
+    setForm({
+      ...form,
+      [e.target.name] : e.target.value
+    })
+  }
+  const handleSubmit=async (e)=>{
+    e.preventDefault();
+    const response= await fetch('http://localhost:8080/demo',{
+      method:'POST',
+      body:JSON.stringify(form),
+      headers:{
+        'Content-Type':'application/json'
+      }
+      
+    })
+    const data= await response.json();
+    console.log(data);
+  }
 
   const onButtonClick = useCallback(() => {
     navigate("/dashboard");
@@ -17,30 +39,36 @@ const RegisterationForm = () => {
   }, [navigate]);
 
   return (
-    <form className="registeration-form">
+    <div className="registeration-form">
       <div className="background25" />
       <div className="logo-frame">
         <h2 className="logo6">REGISTER</h2>
       </div>
-      <div className="credentials-group">
+      <form className="credentials-group" onClick={handleSubmit}>
         <Credentials
           inputTextLabel="Name"
           typeHerePlaceholder="Name"
           type="text"
+          cname="uname"
+          cchange={handlereg}
         />
         <Credentials
           inputTextLabel="Email"
           typeHerePlaceholder="Email"
           type="email"
+          cname="usermail"
+          cchange={handlereg}
         />
         <Credentials
           inputTextLabel="Phone Number"
           typeHerePlaceholder="Phone Number"
           input_type="text"
+          cname="phoneno"
+          cchange={handlereg}
         />
         <div className="dropdowns">
           <div className="dropdown-title" >Company Role</div>
-          <Form.Select className="input-field-formselect">
+          <Form.Select className="input-field-formselect" name="role" onChange={handlereg}>
             <option>Company Role</option>
             <option value="'Warehouse Manager'">'Warehouse Manager'</option>
             <option value="'Order Fulfillment Specialist'">
@@ -54,35 +82,26 @@ const RegisterationForm = () => {
           inputTextLabel="Password"
           typeHerePlaceholder="Enter a valid password"
           input_type="password"
+          cname="pass"
+          cchange={handlereg}
         />
         <Credentials
           inputTextLabel="Confirm Password"
           typeHerePlaceholder="Enter your password"
           input_type="password"
+          cchange={handlereg}
+          cname="passconfirm"
         />
-        {/* <Credentials
-          inputTextLabel="Register"
-          typeHerePlaceholder="register"
-          input_type="submit"
-          idval="register_conf"
-        /> */}
-<div className="button-container">
-<div className="button-frame3">
-        <button className="button18" onClick={onButtonClick}>
-          <div className="input-field-instance">Submit</div>
-          <div className="background26" />
+        <input type="submit" placeholder="submit" className="buttonsubmit" onClick={onButtonClick}/>
+        
+        <button className="buttonsubmit" onClick={onButton2Click}>
+          cancel
         </button>
-        </div>
-      </div>
-        <div className="button-container">
-        <button className="button18" onClick={onButton2Click}>
-          <div className="input-field-instance">Cancel</div>
-          <div className="background26" />
-        </button>
-      </div>
+        
+        
       
-      </div>
-    </form>
+      </form>
+    </div>
   );
 };
 

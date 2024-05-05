@@ -67,9 +67,15 @@
   flex: 1;
   position: relative;
 }
+.button42{
+  justify-content: center;
+  
+}
 .button36 {
   cursor: pointer;
-  border: 0;
+  
+  border-radius: var(--br-8xs);
+  border: 1px solid var(--d9d9d94);
   padding: var(--padding-2xs-8) var(--padding-base) var(--padding-3xs-7)
     var(--padding-mid);
   background-color: transparent;

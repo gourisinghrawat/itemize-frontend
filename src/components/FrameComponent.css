@@ -14,6 +14,12 @@
 }
 .signup-text3 {
   flex: 1;
+  background-color: transparent;
+  border-radius: 7px;
+  min-width: 150px;
+  border: 1px solid var(--d9d9d94);
+  padding: var(--padding-3xs) var(--padding-25xl);
+  background-color: rgb(0, 0, 0);
   position: relative;
   font-size: var(--font-size-lg);
   font-family: var(--font-roboto);
@@ -38,7 +44,8 @@
   min-width: 150px;
 }
 .button29:hover,
-.button30:hover {
+.button30:hover,
+.signup-text3 {
   background-color: var(--d9d9d93);
   border: 1px solid var(--d9d9d93);
   box-sizing: border-box;
