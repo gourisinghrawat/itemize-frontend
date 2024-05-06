@@ -18,20 +18,25 @@ const RegisterationForm = () => {
   }
   const handleSubmit=async (e)=>{
     e.preventDefault();
-    const response= await fetch('http://localhost:8080/demo',{
-      method:'POST',
-      body:JSON.stringify(form),
-      headers:{
-        'Content-Type':'application/json'
-      }
+    console.log(form);
+    const resp = await fetch('http://localhost:5173/api/auth/signup');
+    console.log(resp);
+    console.log(JSON.stringify(form))
+    // const response= await fetch('http://localhost:5173/api/auth/signup',{
+    //   method:'POST',
+    //   body:JSON.stringify(form),
+    //   headers:{
+    //     'Content-Type':'application/json'
+    //   }
       
-    })
-    const data= await response.json();
-    console.log(data);
+    // })
+    // const data= await response.json();
+    // console.log(data);
   }
 
   const onButtonClick = useCallback(() => {
-    navigate("/dashboard-new");
+
+    navigate("/dashboard-start");
   }, [navigate]);
 
   const onButton2Click = useCallback(() => {
@@ -44,7 +49,7 @@ const RegisterationForm = () => {
       <div className="logo-frame">
         <h2 className="logo6">REGISTER</h2>
       </div>
-      <form className="credentials-group" onClick={handleSubmit}>
+      <form className="credentials-group" onSubmit={handleSubmit}>
         <Credentials
           inputTextLabel="Name"
           typeHerePlaceholder="Name"
@@ -97,7 +102,7 @@ const RegisterationForm = () => {
           cname="passconfirm"
           ifreq="true"
         />
-        <input type="submit" placeholder="submit" className="buttonsubmit" onClick={onButtonClick}/>
+        <input type="submit" placeholder="submit" className="buttonsubmit" />
         
         <button className="buttonsubmit" onClick={onButton2Click}>
           cancel

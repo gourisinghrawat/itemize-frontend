@@ -1,6 +1,6 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
-import Navbar from "../components/Navbar";
+import Navbar1 from "../components/Navbar1";
 import SidePanel from "../components/SidePanel";
 import NameCell from "../components/NameCell";
 import Dropdowns from "../components/Dropdowns";
@@ -48,7 +48,7 @@ const DashboardUser = () => {
 
   return (
     <div className="dashboard-user">
-      <Navbar
+      <Navbar1
         onLogoTextClick={onLogoTextClick}
         onPersonIconClick={onPersonIconClick}
       />

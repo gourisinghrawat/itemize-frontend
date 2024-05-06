@@ -8,12 +8,13 @@ import "./WarehouseNew1.css";
 const WarehouseNew1 = () => {
   const navigate = useNavigate();
 
+  
   const onButtonContainerClick = useCallback(() => {
     navigate("/dashboard");
   }, [navigate]);
 
   return (
-    <form className="warehouse-new1">
+    <form className="warehouse-new1" onChange={handleSubmit}>
       <div className="background28" />
       <div className="title11">
         <div className="content11">
