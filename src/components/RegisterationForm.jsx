@@ -31,7 +31,7 @@ const RegisterationForm = () => {
   }
 
   const onButtonClick = useCallback(() => {
-    navigate("/dashboard");
+    navigate("/dashboard-new");
   }, [navigate]);
 
   const onButton2Click = useCallback(() => {

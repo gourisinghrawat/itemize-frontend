@@ -20,12 +20,22 @@ const WarehouseNew1 = () => {
           <h1 className="title12">New Warehouse</h1>
           <div className="product-form2">
             <TextInputs
-              inputTextLabel="Name"
-              icon="pending_I136:2361;25:2095;15:5884"
+              inputTextLabel="Warehouse company"
+              isreq="true"
             />
             <TextInputs
-              inputTextLabel="Address"
-              icon="pending_I136:2361;25:2096;15:5884"
+              inputTextLabel="warehouse code"
+              isreq="true"
+            />
+            <TextInputs
+              inputTextLabel="street"
+            />
+            <TextInputs
+              inputTextLabel="city"
+            />
+            <TextInputs
+              inputTextLabel="pincode"
+              input_type="number"
             />
             <div className="dropdowns1">
               <div className="dropdown-title1">State</div>
@@ -76,6 +86,8 @@ const WarehouseNew1 = () => {
                 <option value="Puducherry (UT)">Puducherry (UT)</option>
               </Form.Select>
             </div>
+            <input type="submit"/>
+
           </div>
         </div>
       </div>

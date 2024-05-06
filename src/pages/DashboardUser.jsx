@@ -129,7 +129,7 @@ const DashboardUser = () => {
                               </div>
                             </div>
                           </div>
-                          <Dropdowns />
+                          <Dropdowns ddis="true" />
                           <div className="credentials3">
                             <div className="username3">
                               <div className="input-text-label3">Password</div>

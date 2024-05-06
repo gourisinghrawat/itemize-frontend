@@ -8,8 +8,6 @@ const Filter = () => {
       <Form.Select className="input-field-formselect3">
       <option value='null'>sort by</option>
         <option value='stock'>stock</option>
-        <option value="'ManufacturingDate'">'Manufacturing date'</option>
-        <option value="Name">Name</option>
         <option value="unitperstock">units per stock</option>
         <option value="price">price</option>
       </Form.Select>
