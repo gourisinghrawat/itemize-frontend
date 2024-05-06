@@ -66,16 +66,7 @@ const Dashboard = () => {
             <img className="rectangle-icon" alt="" src="/rectangle@2x.png" />
             <div className="d-p">
               <div className="rectangle15" />
-              {/* <button className="back-button">
-                <div className="background11" />
-                <div className="company-field-wrapper">
-                  <div className="company-field">
-                    <img className="vector-icon" alt="" src="/vector.svg" />
-                    <img className="circle-icon" alt="" src="/vector-1.svg" />
-                  </div>
-                </div>
-                <div className="cross-icon">Back</div>
-              </button> */}
+              
               <div className="amount-label">
                 <div className="transaction-row">
                   <div className="header-row">

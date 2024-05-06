@@ -5,6 +5,7 @@ import {
   useNavigationType,
   useLocation,
 } from "react-router-dom";
+import EditPartnerPage from "./pages/EditPartnerPage copy";
 import LandingPage from "./pages/LandingPage";
 import RegisterPage from "./pages/RegisterPage";
 import DashboardStart from "./pages/DashboardStart";
@@ -78,6 +79,10 @@ function App() {
         title = "";
         metaDescription = "";
         break;
+        case "/edit-partner-page":
+          title = "";
+          metaDescription = "";
+          break;
       case "/new-partner-page":
         title = "";
         metaDescription = "";
@@ -149,6 +154,8 @@ function App() {
       <Route path="/dashboard" element={<Dashboard />} />
       <Route path="/dashboard-user" element={<DashboardUser />} />
       <Route path="/partner-page" element={<PartnerPage />} />
+      
+      <Route path="/edit-partner-page" element={<EditPartnerPage />} />
       <Route path="/new-partner-page" element={<NewPartnerPage />} />
       <Route path="/inventory-page" element={<InventoryPage />} />
       <Route path="/new-product-page" element={<NewProductPage />} />

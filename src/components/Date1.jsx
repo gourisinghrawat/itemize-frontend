@@ -9,6 +9,12 @@ const Date1 = ({ propFlex, propMinWidth, propWidth }) => {
       width: propWidth,
     };
   }, [propFlex, propMinWidth, propWidth]);
+  const today = new Date();
+  const month = today.getMonth()+1;
+const year = today.getFullYear();
+const date = today. getDate();
+const wmonth = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+const md=wmonth[month]+" "+date;
 
   return (
     <div className="date" style={dateStyle}>
@@ -16,8 +22,8 @@ const Date1 = ({ propFlex, propMinWidth, propWidth }) => {
       <div className="data-comparer-plus-plus">
         <div className="date-picker-label-container">
           <span>
-            <p className="april-7">April 7</p>
-            <p className="p">2024</p>
+            <p className="april-7">{md}</p>
+            <p className="p">{year}</p>
           </span>
         </div>
       </div>

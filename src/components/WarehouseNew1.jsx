@@ -25,15 +25,11 @@ const WarehouseNew1 = () => {
         <div className="content11">
           <h1 className="title12">New Warehouse</h1>
           <div className="product-form2">
-
-          
             <TextInputs
               inputTextLabel="Warehouse company"
-              
             />
             <TextInputs
               inputTextLabel="Warehouse code"
-              
             />
 
 <div className="dropdowns1">
@@ -95,9 +91,6 @@ const WarehouseNew1 = () => {
               inputTextLabel="Pincode"
               input_type="number"
             />
-            
-            
-
           </div>
         </div>
       </div>
