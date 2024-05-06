@@ -13,32 +13,30 @@ const WarehouseNew1 = () => {
     navigate("/dashboard");
   }, [navigate]);
 
+  const onButtonClick = useCallback(() => {
+
+    navigate("/dashboard-start");
+  }, [navigate]);
+
   return (
-    <form className="warehouse-new1" onChange={handleSubmit}>
+    <form className="warehouse-new1" >
       <div className="background28" />
       <div className="title11">
         <div className="content11">
           <h1 className="title12">New Warehouse</h1>
           <div className="product-form2">
+
+          
             <TextInputs
               inputTextLabel="Warehouse company"
-              isreq="true"
+              
             />
             <TextInputs
-              inputTextLabel="warehouse code"
-              isreq="true"
+              inputTextLabel="Warehouse code"
+              
             />
-            <TextInputs
-              inputTextLabel="street"
-            />
-            <TextInputs
-              inputTextLabel="city"
-            />
-            <TextInputs
-              inputTextLabel="pincode"
-              input_type="number"
-            />
-            <div className="dropdowns1">
+
+<div className="dropdowns1">
               <div className="dropdown-title1">State</div>
               <Form.Select className="input-field-formselect1">
                 <option>State/ Ut</option>
@@ -87,7 +85,18 @@ const WarehouseNew1 = () => {
                 <option value="Puducherry (UT)">Puducherry (UT)</option>
               </Form.Select>
             </div>
-            <input type="submit"/>
+            <TextInputs
+              inputTextLabel="Street"
+            />
+            <TextInputs
+              inputTextLabel="City"
+            />
+            <TextInputs
+              inputTextLabel="Pincode"
+              input_type="number"
+            />
+            
+            
 
           </div>
         </div>
@@ -99,7 +108,7 @@ const WarehouseNew1 = () => {
           </button>
         </div>
         <div className="button26">
-          <button className="button27">
+          <button className="button27" onClick={onButtonClick}>
             <div className="text26">Cancel</div>
           </button>
         </div>

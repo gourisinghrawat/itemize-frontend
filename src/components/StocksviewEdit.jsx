@@ -1,7 +1,7 @@
 import { useCallback } from "react";
 import ProductA from "./ProductA";
 import TextInputs from "./TextInputs";
-import Dropdowns from "./Dropdowns";
+import Dropdowns2 from "./Dropdowns2";
 import { useNavigate } from "react-router-dom";
 import "./StocksviewEdit.css";
 
@@ -19,13 +19,13 @@ const StocksviewEdit = () => {
         <div className="product-a-wrapper">
           <ProductA />
         </div>
-        <img className="close-circle-icon" alt="" src="/closecircle.svg" />
+        {/* <img className="close-circle-icon" alt="" src="/closecircle.svg" />
         <img
           className="close-circle-icon1"
           loading="lazy"
           alt=""
           src="/closecircle.svg"
-        />
+        /> */}
       </div>
       <ProductA propAlignSelf="unset" propWidth="256px" />
       <form className="background58">
@@ -72,10 +72,10 @@ const StocksviewEdit = () => {
             iconColor="#404040"
             propColor="#404040"
           />
-          <Dropdowns propColor="#404040" />
+          <Dropdowns2 propColor="#404040" />
         </div>
         <div className="p-d-t-button">
-          <button className="button44">
+          <button className="button44" onClick={onButton1Click}>
             <div className="background59">Save</div>
             <div className="background60" />
           </button>

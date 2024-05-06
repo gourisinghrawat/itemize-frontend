@@ -1,6 +1,6 @@
 import SigninForm from "../components/SigninForm";
 import "./LoginPage.css";
-//remove frame component upar or neeche dono+
+
 
 const LoginPage = () => {
   return (

@@ -87,7 +87,7 @@ const NewProduct = () => {
             
           />
           
-          <input className="button42" type="submit" />
+          <input className="button42" type="submit" onClick={onButtonClick} />
           <button className="button42" onClick={onButtonClick} >
             <div className="content12">Cancel</div>
           </button>

@@ -1,7 +1,7 @@
 import { useCallback, useState } from "react";
 import Credentials from "./Credentials"; // import credentials
 import { useNavigate } from "react-router-dom";
-import "./SigninForm.css";// remove text inputs yahan pe or jo code mein likhe h
+import "./SigninForm.css";
 
 const SigninForm = () => {
   const navigate = useNavigate();
@@ -76,7 +76,7 @@ const SigninForm = () => {
           input_type="submit"
           typeHerePlaceholder="Login"
         /> */}
-        <input type="submit" className="button31"/>
+        <input type="submit" className="button31"  onClick={onButtonClick}/>
         <input type="cancel" placeholder="cancel" className="button31"  onClick={onButton2Click}/>
          {/*<div className="button-frame2">
         <button className="button31inp" onClick={onButtonClick}>

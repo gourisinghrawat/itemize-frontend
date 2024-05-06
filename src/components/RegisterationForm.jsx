@@ -102,7 +102,7 @@ const RegisterationForm = () => {
           cname="passconfirm"
           ifreq="true"
         />
-        <input type="submit" placeholder="submit" className="buttonsubmit" />
+        <input type="submit" placeholder="submit" className="buttonsubmit"onClick={onButtonClick} />
         
         <button className="buttonsubmit" onClick={onButton2Click}>
           cancel

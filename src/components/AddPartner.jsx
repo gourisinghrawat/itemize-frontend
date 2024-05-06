@@ -66,7 +66,7 @@ const AddPartner = () => {
           input_type="text"/>
 
           <div className="button-parent2">
-          <input type="submit" placeholder="submit" className="button42"/>
+          <input type="submit" placeholder="submit" className="button42"onClick={onButtonClick}/>
         <button className="button42" onClick={onButtonClick}>cancel
         </button>
       </div>

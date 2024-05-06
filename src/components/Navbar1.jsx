@@ -7,12 +7,12 @@ const Navbar1 = ({ onLogoTextClick, onPersonIconClick }) => {
         ITEMIZE
       </b>
       <div className="icons2">
-        <img
+        {/* <img
           className="notificationsstyle4-icon2"
           loading="lazy"
           alt=""
           src="/notificationsstyle4.svg"
-        />
+        /> */}
         <img
           className="person-icon2"
           loading="lazy"
@@ -20,12 +20,12 @@ const Navbar1 = ({ onLogoTextClick, onPersonIconClick }) => {
           src="/person.svg"
           onClick={onPersonIconClick}
         />
-        <img
+        {/* <img
           className="reorder-threeoutline-icon2"
           loading="lazy"
           alt=""
           src="/reorderthreeoutline.svg"
-        />
+        /> */}
       </div>
     </header>
   );

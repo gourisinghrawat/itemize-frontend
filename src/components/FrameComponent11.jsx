@@ -87,7 +87,7 @@ const FrameComponent11 = () => {
       <div className="frame-wrapper5">
         <div className="frame-parent9">
           <div className="frame-parent10">
-            <div className="back-button-parent">
+            {/* <div className="back-button-parent">
               {/* <button className="back-button2">
                 <div className="background42" />
                 <div className="back-button-child">
@@ -107,19 +107,19 @@ const FrameComponent11 = () => {
                   />
                   <div className="signup-text6">Clear List</div>
                 </div>
-              </button> */}
-            </div>
+              </button> 
+            </div> */}
             <div className="frame-wrapper6">
-              <div className="dropdowns-parent">
-                <button className="dropdowns3">
+              {/* <div className="dropdowns-parent"> */}
+                {/* <button className="dropdowns3">
                   <div className="input-field9">
                     <div className="text41">
                       <div className="dropdown-option">Dropdown option</div>
                       <img className="filter-icon" alt="" src="/filter.svg" />
                     </div>
                   </div>
-                </button>
-                <div className="export-button-wrapper">
+                </button> */}
+                {/* <div className="export-button-wrapper"> */}
                   {/* <button className="export-button">
                     <img
                       className="sharefill-icon"
@@ -131,7 +131,7 @@ const FrameComponent11 = () => {
                       <div className="text42">Export</div>
                     </div>
                   </button> */}
-                </div>
+                {/* </div> */}
                 <div className="add-pdt-button-wrapper">
                   <button
                     className="add-pdt-button"
@@ -141,7 +141,7 @@ const FrameComponent11 = () => {
                     <div className="text43">Add new Partner+</div>
                   </button>
                 </div>
-              </div>
+              {/* </div> */}
             </div>
           </div>
           <div className="frame-wrapper7">
