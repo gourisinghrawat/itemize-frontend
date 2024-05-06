@@ -19,19 +19,19 @@ const RegisterationForm = () => {
   const handleSubmit=async (e)=>{
     e.preventDefault();
     console.log(form);
-    const resp = await fetch('http://localhost:5173/api/auth/signup');
-    console.log(resp);
-    console.log(JSON.stringify(form))
-    // const response= await fetch('http://localhost:5173/api/auth/signup',{
-    //   method:'POST',
-    //   body:JSON.stringify(form),
-    //   headers:{
-    //     'Content-Type':'application/json'
-    //   }
+    
+    const response= await fetch('http://localhost:8080/demo',{
+      method:'POST',
+      body:JSON.stringify(form),
+      headers:{
+        'Content-Type':'application/json'
+      }
       
-    // })
-    // const data= await response.json();
-    // console.log(data);
+    })
+    const data= await response.json();
+    console.log(data);
+    
+    onButtonClick;
   }
 
   const onButtonClick = useCallback(() => {
@@ -102,7 +102,7 @@ const RegisterationForm = () => {
           cname="passconfirm"
           ifreq="true"
         />
-        <input type="submit" placeholder="submit" className="buttonsubmit"onClick={onButtonClick} />
+        <input type="submit" placeholder="submit" className="buttonsubmit" />
         
         <button className="buttonsubmit" onClick={onButton2Click}>
           cancel

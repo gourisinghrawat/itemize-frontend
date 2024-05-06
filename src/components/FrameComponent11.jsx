@@ -7,7 +7,7 @@ const FrameComponent11 = () => {
   const navigate = useNavigate();
 
   const onButtonContainerClick = useCallback(() => {
-    navigate("/view-order-page");
+    navigate("/");
   }, [navigate]);
 
   const onButtonContainer2Click = useCallback(() => {
@@ -32,6 +32,9 @@ const FrameComponent11 = () => {
 
   const onAddPdtButtonClick = useCallback(() => {
     navigate("/new-partner-page");
+  }, [navigate]);
+  const oneditpartner = useCallback(() => {
+    navigate("/edit-partner-page");
   }, [navigate]);
 
   return (
@@ -160,10 +163,10 @@ const FrameComponent11 = () => {
               </div>
               <div className="partner-table-title-parent">
                 <PartnerTableTitle
-                  onButtonContainerClick={onButtonContainerClick}
+                  onButtonContainerClick={oneditpartner}
                 />
                 <PartnerTableTitle
-                  onButtonContainerClick={onButtonContainer2Click}
+                  onButtonContainerClick={oneditpartner}
                 />
               </div>
             </div>
