@@ -14,7 +14,7 @@ const Date1 = ({ propFlex, propMinWidth, propWidth }) => {
 const year = today.getFullYear();
 const date = today. getDate();
 const wmonth = ["January","February","March","April","May","June","July","August","September","October","November","December"];
-const md=wmonth[month]+" "+date;
+const md=wmonth[month-1]+" "+date;
 
   return (
     <div className="date" style={dateStyle}>

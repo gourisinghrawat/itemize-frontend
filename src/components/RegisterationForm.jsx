@@ -31,7 +31,7 @@ const RegisterationForm = () => {
     const data= await response.json();
     console.log(data);
     
-    onButtonClick;
+    navigate("/dashboard-start");
   }
 
   const onButtonClick = useCallback(() => {
